@@ -2,25 +2,23 @@
 *{
     cursor: url(../Cursor/puntero.png) 0 0, auto;
     font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(../Fondos/alex-pronin-8.jpg);
     background-attachment: fixed; /*Fijar la imagen*/
     background-size: cover; /*Escala la imagen al mayor tamaño posible sin estirarla*/
     background-position: center; /*Posisiciona la imagen en el centro*/
-    
 }
 a{
     cursor: url(../Cursor/punteroSelc.png), auto;
     text-decoration: none;
+    
 }
 header {
     display: flex;
     justify-content: center;/*Centra todos los elementos que contenga*/
-    background-color: rgba(31, 171, 206, 0.274); /*Color del contorno del header*/
+    background-color: rgba(5, 5, 5, 0.514); /*Color del contorno del header*/
     top: 0;
     width: 100%;
 }
@@ -59,4 +57,29 @@ header nav div ul li a{
 header nav div ul li:hover {
     background-color: rgba(31, 171, 206, 0.473);
 }
+img{
+    height: 50px;
+    width: 50px;
+}
 
+footer{
+    display: flex;
+    justify-content: center;/*Centra todos los elementos que contenga*/
+    background-color: rgba(5, 5, 5, 0.514); /*Color del contorno del header*/
+    top: 0;
+    width: 100%;
+}
+footer div{
+    display: flex;
+    justify-content: center;/*Centra todos los elementos que contenga*/
+}
+footer div div{
+    display: flex;
+    justify-content: center;/*Centra todos los elementos que contenga*/
+    
+}
+footer div div ul{
+    list-style-type: none; /*Elimina los puntos al comienzo de la lista*/
+    margin: 0;
+    padding: 0; /*Elimina el padign que quedaba al inicio del los li (el pequeño cuadro)*/
+}
