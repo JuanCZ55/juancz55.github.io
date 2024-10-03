@@ -1,7 +1,7 @@
 
         const imagenes = [];
         for (let i = 1; i <= 4; i++) {
-            imagenes.push("imagenes/Imagen (" + i + ").jpg");
+            imagenes.push("imagenes/GTASA/Imagen (" + i + ").jpg");
         }
 
         const imgOne = document.getElementById("im1");
