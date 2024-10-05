@@ -72,9 +72,6 @@ header nav div ul li a {
     color: #fff;
 }
 
-header nav div ul li:hover {
-    background-color: rgba(31, 171, 206, 0.473);
-}
 
 img {
     height: 50px;

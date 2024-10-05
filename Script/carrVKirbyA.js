@@ -1,14 +1,13 @@
-
         const imagenes = [];
         for (let i = 1; i <= 4; i++) {
-            imagenes.push("imagenes/Kirby/Imagen (" + i + ").jpg");
+            imagenes.push("../Imagenes/Kirby/Imagen (" + i + ").jpg");
         }
 
-        const imgOne = document.getElementById("im1");
-        const imgTwo = document.getElementById("im2");
-        const imgTree = document.getElementById("im3");
-        const botonDe = document.getElementById("de");
-        const botonIz = document.getElementById("iz");
+        const imgOne = document.getElementById("im1A");
+        const imgTwo = document.getElementById("im2A");
+        const imgTree = document.getElementById("im3A");
+        const botonDe = document.getElementById("deA");
+        const botonIz = document.getElementById("izA");
 
         var contI = 0;
         var contIm = 1;

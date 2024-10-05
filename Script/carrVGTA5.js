@@ -1,7 +1,7 @@
 
         const imagenes = [];
-        for (let i = 1; i <= 4; i++) {
-            imagenes.push("imagenes/GTA5/Imagen (" + i + ").jpg");
+        for (let i = 1; i <= 5; i++) {
+            imagenes.push("../Imagenes/GTA5/Imagen (" + i + ").jpg");
         }
 
         const imgOne = document.getElementById("im1");

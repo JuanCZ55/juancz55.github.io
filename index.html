@@ -4,10 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpinteria</title>
+    <title>KARPENT</title>
     <link rel="icon" type="image/png" href="Imagenes/Logo.png">
     <link rel="stylesheet" href="Style/style.css">
+    <style>
+        .dropdown {
+            display: inline-block;
+            position: relative;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            overflow: auto;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: #000000;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            color: #FFFFFF;
+            background-color: #00A4BD;
+        }
+    </style>
 </head>
+
 
 <body>
     <header>
@@ -18,53 +50,61 @@
                 </h1>
             </div>
             <div class="navegador">
-                <ul>
-                    <li>
-                        <a href="Paginas/juegos.html">Videojuegos</a>
-                    </li>
-                    <li class="liCentro">
-                        <a href="Paginas/consolas.html">Consolas</a>
-                    </li>
-                    <li>
-                        <a href="Paginas/trucos.html">Trucos</a>
-                    </li>
-                </ul>
+                <div class="dropdown">
+                    <button class="dropbtn">VideoJuegos</button>
+                    <div class="dropdown-content">
+                        <a href="Paginas/VGTA5.html">Grand Theft Auto V</a>
+                        <a href="Paginas/VGTASA.html">Grand Theft Auto: San Andreas</a>
+                        <a href="Paginas/VKirby.html">Kirby's Return to Dream Land Deluxe</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Consolas</button>
+                    <div class="dropdown-content">
+                        <a href="Paginas/cPlayStation.html">PlayStation</a>
+                        <a href="Paginas/cXbox.html">Xbox</a>
+                        <a href="Paginas/cNintendo.html">Nintendo</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="Paginas/trucos.html">Truco</a>
+                </div>
             </div>
     </header>
     <!--Cuerpo de la pagina-->
     <section>
         <article class="ColumInfo">
-            <div >
-                <a  href="">
-                    <h3>Titulo de div mas imgaen</h3>
-                    <img src="" alt="">
-                </a>
-            </div>
-            <div >
+            <div>
                 <a href="">
                     <h3>Titulo de div mas imgaen</h3>
                     <img src="" alt="">
                 </a>
             </div>
-            <div >
+            <div>
                 <a href="">
                     <h3>Titulo de div mas imgaen</h3>
                     <img src="" alt="">
                 </a>
             </div>
-            <div >
+            <div>
                 <a href="">
                     <h3>Titulo de div mas imgaen</h3>
                     <img src="" alt="">
                 </a>
             </div>
-            <div >
+            <div>
                 <a href="">
                     <h3>Titulo de div mas imgaen</h3>
                     <img src="" alt="">
                 </a>
             </div>
-            <div >
+            <div>
+                <a href="">
+                    <h3>Titulo de div mas imgaen</h3>
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div>
                 <a href="">
                     <h3>Titulo de div mas imgaen</h3>
                     <img src="" alt="">
@@ -126,7 +166,9 @@
             </div>
         </div>
         <div>
-            <p>Todos los contenidos, títulos de juegos, nombres y/o imágenes comerciales, marcas comerciales, arte e imágenes asociadas son marcas comerciales y/o material con derechos de autor de sus propietarios respectivos.Todos los derechos reservados.</p>
+            <p>Todos los contenidos, títulos de juegos, nombres y/o imágenes comerciales, marcas comerciales, arte e
+                imágenes asociadas son marcas comerciales y/o material con derechos de autor de sus propietarios
+                respectivos.Todos los derechos reservados.</p>
         </div>
     </footer>
 
