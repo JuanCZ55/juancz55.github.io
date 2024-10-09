@@ -1,8 +1,10 @@
+let canti = 6;
 
         const imagenes = [];
-        for (let i = 1; i <= 4; i++) {
+        for (let i = 1; i <= canti; i++) {
             imagenes.push("imagenes/NAmoled/Imagen (" + i + ").jpg");
         }
+        canti--;
 
         const imgOne = document.getElementById("im1");
         const imgTwo = document.getElementById("im2");
@@ -22,34 +24,34 @@
 
         botonDe.addEventListener("click", ()=>{
             if(contImg == 0){
-                contImg=3;
+                contImg=canti;
             }else{
                 contImg=contImg-1;
             }
             if(contIm == 0){
-                contIm=3;
+                contIm=canti;
             }else{
                 contIm--;
             }
             if(contI == 0){
-                contI=3;
+                contI=canti;
             }else{
                 contI--;
             }
             cambiarImg();
         })
         botonIz.addEventListener("click", ()=>{
-            if(contImg == 3){
+            if(contImg == canti){
                 contImg=0;
             }else{
                 contImg++;
             }
-            if(contIm == 3){
+            if(contIm == canti){
                 contIm=0;
             }else{
                 contIm++;
             }
-            if(contI == 3){
+            if(contI == canti){
                 contI=0;
             }else{
                 contI++;

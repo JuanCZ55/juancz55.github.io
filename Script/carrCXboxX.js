@@ -1,58 +1,60 @@
+let cant = 4;
 
-        const imagenes = [];
-        for (let i = 1; i <= 4; i++) {
-            imagenes.push("imagenes/XboxX/Imagen (" + i + ").jpg");
-        }
+const imagene = [];
+for (let i = 1; i <= cant; i++) {
+    imagene.push("../Imagenes/Xbox/XboxX/Imagen (" + i + ").png");
+}
+cant--;
 
-        const imgOne = document.getElementById("im1");
-        const imgTwo = document.getElementById("im2");
-        const imgTree = document.getElementById("im3");
-        const botonDe = document.getElementById("de");
-        const botonIz = document.getElementById("iz");
+const imga = document.getElementById("imc0");
+const imgb = document.getElementById("imc1");
+const imgc = document.getElementById("imc2");
+const botonDer = document.getElementById("de1");
+const botonIzq = document.getElementById("iz1");
 
-        var contI = 0;
-        var contIm = 1;
-        var contImg = 2;
+var contI1x = 0;
+var contIm2x = 1;
+var contImg3x = 2;
 
-        function cambiarImg(){
-            imgOne.src = imagenes[contI];
-            imgTwo.src = imagenes[contIm];
-            imgTree.src = imagenes[contImg];
-        }
+function cambiarImg1() {
+    imga.src = imagene[contI1x];
+    imgb.src = imagene[contIm2x];
+    imgc.src = imagene[contImg3x];
+}
 
-        botonDe.addEventListener("click", ()=>{
-            if(contImg == 0){
-                contImg=3;
-            }else{
-                contImg=contImg-1;
-            }
-            if(contIm == 0){
-                contIm=3;
-            }else{
-                contIm--;
-            }
-            if(contI == 0){
-                contI=3;
-            }else{
-                contI--;
-            }
-            cambiarImg();
-        })
-        botonIz.addEventListener("click", ()=>{
-            if(contImg == 3){
-                contImg=0;
-            }else{
-                contImg++;
-            }
-            if(contIm == 3){
-                contIm=0;
-            }else{
-                contIm++;
-            }
-            if(contI == 3){
-                contI=0;
-            }else{
-                contI++;
-            }
-            cambiarImg();
-        })
+botonDer.addEventListener("click", () => {
+    if (contImg3x == 0) {
+        contImg3x = cant;
+    } else {
+        contImg3x = contImg3x - 1;
+    }
+    if (contIm2x == 0) {
+        contIm2x = cant;
+    } else {
+        contIm2x--;
+    }
+    if (contI1x == 0) {
+        contI1x = cant;
+    } else {
+        contI1x--;
+    }
+    cambiarImg1();
+})
+botonIzq.addEventListener("click", () => {
+    if (contImg3x == cant) {
+        contImg3x = 0;
+    } else {
+        contImg3x++;
+    }
+    if (contIm2x == cant) {
+        contIm2x = 0;
+    } else {
+        contIm2x++;
+    }
+    if (contI1x == cant) {
+        contI1x = 0;
+    } else {
+        contI1x++;
+    }
+    cambiarImg1();
+})
