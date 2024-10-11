@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpinteria</title>
+    <title>Switch</title>
     <link rel="icon" type="image/png" href="../Imagenes/Logo.png">
     <link rel="stylesheet" href="../Style/style.css">
-    <link rel="stylesheet" href="../Script/carrCNLite.js">
-    <link rel="stylesheet" href="../Script/carrCNAmoled.js">
+    <script src="../Script/carrCNLite.js" defer></script>
+    <script src="../Script/carrCNOled.js" defer></script>
     <style>
         .tituh1 {
             text-align: center;
         }
 
-        section {
+        article {
             margin: 0% 10%;
             backdrop-filter: blur(10px);
             background-color: rgba(255, 255, 255, 0.11);
@@ -43,6 +43,37 @@
         .subth2 {
             align-items: self-start;
         }
+
+        button {
+            width: 100%;
+            height: auto;
+            background: none;
+            border: none;
+
+        }
+
+        .imgcarrusel {
+            width: 22%;
+            height: 150px;
+            object-fit: scale-down;
+            transition: opacity 2s ease;
+            opacity: 1;
+        }
+
+        .imgcarrusel:hover {
+            opacity: 0.5;
+        }
+
+
+        #carruselOLED,
+        #carruselLite {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 100%;
+        }
+        
     </style>
 </head>
 
@@ -70,7 +101,7 @@
             </div>
     </header>
 
-    <section>
+    <article>
         <h1 class="tituh1">Switch OLED vs Switch Lite: </h1>
         <h1 class="tituh1">Una batalla de precios</h1>
         <img src="../Imagenes/Nintendo/Incio.png" alt="inicio" id="imginicio">
@@ -87,26 +118,38 @@
         </p>
         <h2 class="subth2">Diseño y Pantalla</h2>
         <p class="parrafos">
-            ---------- carrusel---------
-            <br>
+        <div id="carruselLite">
+            <button id="izL"><img src="../Iconos/Izquierda.png" alt="atras"></button>
+            <img src="../Imagenes/Nintendo/Lite/Imagen (1).png" alt="3" id="imc3L" class="imgcarrusel">
+            <img src="../Imagenes/Nintendo/Lite/Imagen (2).png" alt="4" id="imc4L" class="imgcarrusel">
+            <img src="../Imagenes/Nintendo/Lite/Imagen (3).png" alt="5" id="imc5L" class="imgcarrusel">
+            <button id="deL" ;><img src="../Iconos/Derecha.png" alt="adelante"></button>
+        </div>
+        <br>
 
-            La Nintendo Switch Lite está diseñada para ser tu compañera de juegos en movimiento. Con un peso ligero y un
-            tamaño compacto, es fácil de llevar a cualquier lugar. Su pantalla de 5.5 pulgadas, con una resolución de
-            1280 x 720 píxeles, proporciona imágenes nítidas y colores vivos, ideales para disfrutar de tus juegos
-            favoritos. Está disponible en una variedad de colores vibrantes, lo que permite a los jugadores elegir un
-            modelo que refleje su estilo personal. Sin embargo, su diseño portátil implica que no puede conectarse a un
-            televisor, lo que la limita a una experiencia de juego exclusivamente en modo portátil.
-            <br>
-            <br>
-            ---------- carrusel---------
-            <br>
-            Mientras que la Nintendo Switch OLED se eleva al siguiente nivel con su impresionante pantalla de 7
-            pulgadas, que utiliza tecnología OLED para ofrecer colores más profundos y un contraste notable. Esta
-            pantalla más grande no solo mejora la experiencia visual, sino que también permite una mejor visualización
-            en grupo, perfecta para jugar con amigos o familiares. El diseño es elegante y moderno, con un soporte
-            ajustable más robusto, lo que brinda una mayor estabilidad y versatilidad al jugar en diferentes posiciones.
-            Además, el dock de la OLED incluye un puerto LAN, asegurando conexiones a internet más rápidas y estables
-            para los juegos en línea.
+        La Nintendo Switch Lite está diseñada para ser tu compañera de juegos en movimiento. Con un peso ligero y un
+        tamaño compacto, es fácil de llevar a cualquier lugar. Su pantalla de 5.5 pulgadas, con una resolución de
+        1280 x 720 píxeles, proporciona imágenes nítidas y colores vivos, ideales para disfrutar de tus juegos
+        favoritos. Está disponible en una variedad de colores vibrantes, lo que permite a los jugadores elegir un
+        modelo que refleje su estilo personal. Sin embargo, su diseño portátil implica que no puede conectarse a un
+        televisor, lo que la limita a una experiencia de juego exclusivamente en modo portátil.
+        <br><br>
+
+        <div id="carruselOLED">
+            <button id="iz1O"><img src="../Iconos/Izquierda.png" alt="atras"></button>
+            <img src="../Imagenes/Nintendo/Amoled/Imagen (1).png" alt="3" id="imc0O" class="imgcarrusel">
+            <img src="../Imagenes/Nintendo/Amoled/Imagen (2).png" alt="4" id="imc1O" class="imgcarrusel">
+            <img src="../Imagenes/Nintendo/Amoled/Imagen (3).png" alt="5" id="imc2O" class="imgcarrusel">
+            <button id="de1O" ;><img src="../Iconos/Derecha.png" alt="adelante"></button>
+        </div>
+        <br>
+        Mientras que la Nintendo Switch OLED se eleva al siguiente nivel con su impresionante pantalla de 7
+        pulgadas, que utiliza tecnología OLED para ofrecer colores más profundos y un contraste notable. Esta
+        pantalla más grande no solo mejora la experiencia visual, sino que también permite una mejor visualización
+        en grupo, perfecta para jugar con amigos o familiares. El diseño es elegante y moderno, con un soporte
+        ajustable más robusto, lo que brinda una mayor estabilidad y versatilidad al jugar en diferentes posiciones.
+        Además, el dock de la OLED incluye un puerto LAN, asegurando conexiones a internet más rápidas y estables
+        para los juegos en línea.
         </p>
         <h2 class="subth2">Rendimiento y Batería</h2>
         <p class="parrafos">¿Buscas una consola para tus aventuras portátiles? La Nintendo Switch Lite es tu compañera
@@ -156,9 +199,11 @@
             modo portátil. Además, el mayor almacenamiento interno te permite guardar más juegos y actualizaciones sin
             preocuparte por el espacio.
             <br>
-            Y si aun no te decidis lo mejor es ir a la tienda mas cercana y te daras cuenta cual es para vos"</p>
+            Y si aun no te decidis lo mejor es ir a la tienda mas cercana y te daras cuenta cual es para vos"
+        </p>
 
-    </section>
+
+    </article>
     <footer>
         <div>
             <div>

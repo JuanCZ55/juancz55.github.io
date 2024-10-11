@@ -1,60 +1,60 @@
-let canti = 6;
+let cantiL = 4;
 
-        const imagenes = [];
-        for (let i = 1; i <= canti; i++) {
-            imagenes.push("imagenes/NLite/Imagen (" + i + ").jpg");
-        }
-        canti--;
+const imagenesL = [];
+for (let i = 1; i <= cantiL; i++) {
+    imagenesL.push("../Imagenes/Nintendo/Lite/Imagen (" + i + ").png");
+}
+cantiL--;
 
-        const imgOne = document.getElementById("im1");
-        const imgTwo = document.getElementById("im2");
-        const imgTree = document.getElementById("im3");
-        const botonDe = document.getElementById("de");
-        const botonIz = document.getElementById("iz");
+const imgOneL = document.getElementById("imc3L");
+const imgTwoL = document.getElementById("imc4L");
+const imgTreeL = document.getElementById("imc5L");
+const botonDeL = document.getElementById("deL");
+const botonIzL = document.getElementById("izL");
 
-        var contI = 0;
-        var contIm = 1;
-        var contImg = 2;
+var contI = 0;
+var contIm = 1;
+var contImg = 2;
 
-        function cambiarImg(){
-            imgOne.src = imagenes[contI];
-            imgTwo.src = imagenes[contIm];
-            imgTree.src = imagenes[contImg];
-        }
+function cambiarImgL() {
+    imgOneL.src = imagenesL[contI];
+    imgTwoL.src = imagenesL[contIm];
+    imgTreeL.src = imagenesL[contImg];
+}
 
-        botonDe.addEventListener("click", ()=>{
-            if(contImg == 0){
-                contImg=canti;
-            }else{
-                contImg=contImg-1;
-            }
-            if(contIm == 0){
-                contIm=canti;
-            }else{
-                contIm--;
-            }
-            if(contI == 0){
-                contI=canti;
-            }else{
-                contI--;
-            }
-            cambiarImg();
-        })
-        botonIz.addEventListener("click", ()=>{
-            if(contImg == canti){
-                contImg=0;
-            }else{
-                contImg++;
-            }
-            if(contIm == canti){
-                contIm=0;
-            }else{
-                contIm++;
-            }
-            if(contI == canti){
-                contI=0;
-            }else{
-                contI++;
-            }
-            cambiarImg();
-        })
+botonDeL.addEventListener("click", () => {
+    if (contImg == 0) {
+        contImg = cantiL;
+    } else {
+        contImg = contImg - 1;
+    }
+    if (contIm == 0) {
+        contIm = cantiL;
+    } else {
+        contIm--;
+    }
+    if (contI == 0) {
+        contI = cantiL;
+    } else {
+        contI--;
+    }
+    cambiarImgL();
+})
+botonIzL.addEventListener("click", () => {
+    if (contImg == cantiL) {
+        contImg = 0;
+    } else {
+        contImg++;
+    }
+    if (contIm == cantiL) {
+        contIm = 0;
+    } else {
+        contIm++;
+    }
+    if (contI == cantiL) {
+        contI = 0;
+    } else {
+        contI++;
+    }
+    cambiarImgL();
+})
