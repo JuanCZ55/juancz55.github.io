@@ -6,84 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirby's Return to Dream Land Deluxe</title>
     <link rel="icon" type="image/png" href="../Imagenes/Logo.png">
-    <link rel="stylesheet" href="../Style/style.css">
+    <!--<link rel="stylesheet" href="../Style/style.css">-->
+    <link rel="stylesheet" href="../Style/stykeKirby.css">
     <script src="../Script/carrVKirbyA.js" defer></script>
     <script src="../Script/carrVKirbyB.js" defer></script>
-    <style>
-        .dropdown {
-            display: inline-block;
-            position: relative;
 
-        }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            width: 100%;
-            overflow: auto;
-            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            display: block;
-            color: #000000;
-            padding: 5px;
-            text-decoration: none;
-        }
-
-        .dropdown-content a:hover {
-            color: #FFFFFF;
-            background-color: #00A4BD;
-        }
-        img {
-            height: 200px;
-            width: auto;
-        }
-    </style>
-    
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <div class="logo">
-                <h1>
-                    <a href="../index.html">KARPENT</a>
+            <div class="header-logo">
+                <h1 class="header-titular">
+                    <a class="titulo" href="../index.html">KARPENT</a>
                 </h1>
             </div>
-            <div class="navegador">
-                <div class="dropdown">
-                    <button class="dropbtn">VideoJuegos</button>
-                    <div class="dropdown-content">
+            <div class="header-nav">
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button">VideoJuegos</button>
+                    <div class="header-nav-menu-item">
                         <a href="../Paginas/VGTA5.html">Grand Theft Auto V</a>
                         <a href="../Paginas/VGTASA.html">Grand Theft Auto: San Andreas</a>
                         <a href="../Paginas/VKirby.html">Kirby's Return to Dream Land Deluxe</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Consolas</button>
-                    <div class="dropdown-content">
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button">Consolas</button>
+                    <div class="header-nav-menu-item">
                         <a href="../Paginas/cPlayStation.html">PlayStation</a>
                         <a href="../Paginas/cXbox.html">Xbox</a>
                         <a href="../Paginas/cNintendo.html">Nintendo</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <a href="../Paginas/trucos.html">Truco</a>
+                <div class="header-nav-menu" id="unico">
+                    <a id="pag_truco" href="../Paginas/trucos.html">Truco</a>
                 </div>
             </div>
     </header>
 
     <section>
         <article>
-            <h2>
+            <h2 class="title">
                 Kirby's Return to Dreamland Deluxe
             </h2>
-            <img src="../Imagenes/Kirby/Principal.jpg" alt="Imagen Principal">
+            <div class="cont_img">
+                <img class="presen" src="../Imagenes/Kirby/Principal.jpg" alt="Imagen Principal">
+            </div>
             <p>
                 El duro Kirby está de vuelta para una aventura de plataformas para 4 jugadores. Copia las habilidades de
                 los enemigos y usa su poder para atacar con una espada , blandir un látigo y flotar con una sombrilla .
@@ -93,9 +62,12 @@
                 puede controlar a otro Kirby o a uno de los amigos icónicos de Kirby como King Dedede , Meta Knight y
                 Bandana Waddle
             </p>
-            <img src="../Imagenes/Kirby/Img 1.jpg" alt="">
-            
-            <h2>Érase una vez en el planeta Pop</h2>
+            <div class="cont_img">
+                <img class="presen" src="../Imagenes/Kirby/Img 1.jpg" alt="">
+            </div>
+
+
+            <h2 class="title">Érase una vez en el planeta Pop</h2>
             <p>
                 En un día luminoso en Dream Land , Kirby , sosteniendo una Strawberry Shortcake, está siendo perseguido
                 por King Dedede y Bandana Waddle Dee . Meta Knight está en una colina, leyendo un libro. De repente, una
@@ -148,80 +120,113 @@
                 Hatter , Bandana Waddle Dee , Rick , Kine y Coo , preparando los eventos de Team Kirby Clash Deluxe y
                 Super Kirby Clash .
             </p>
-            <div>
-                <button id="izA">Izquierdo</button>
-                <img id="im1A" src="../Imagenes/Kirby/Imagen (1).jpg">
-                <img id="im2A" src="../Imagenes/Kirby/Imagen (2).jpg">
-                <img id="im3A" src="../Imagenes/Kirby/Imagen (3).jpg">
-                <button id="deA">Derecha</button>
+            <div class="carrusel">
+                <div class="button">
+                    <button class="button" id="izA">Izquierdo</button>
+                </div>
+                <div class="cont_img_carrusel">
+                    <img class="img_carrusel" id="im1A" src="../Imagenes/Kirby/Imagen (1).jpg">
+                    <img class="img_carrusel" id="im2A" src="../Imagenes/Kirby/Imagen (2).jpg">
+                    <img class="img_carrusel" id="im3A" src="../Imagenes/Kirby/Imagen (3).jpg">
+                    
+                </div>
+                <div class="button">
+                    <button class="button" id="deA">Derecha</button>
+                </div>
             </div>
-            <h2>Jugabilidad</h2>
+
+            <h2 class="title"> </h2>
             <p>
-                Kirby's Return to Dream Land Deluxe es una nueva versión mejorada de Kirby's Return to Dream Land , que
-                presenta un estilo artístico actualizado pero que en su mayoría contiene el mismo contenido que el
-                lanzamiento original. Presenta las nuevas habilidades Mecha y Sand Copy junto con el regreso de Festival
-                , un nuevo modo de juego titulado Magolor Epilogue: The Interdimensional Traveler que cuenta los eventos
-                del regreso de Magolor después de la destrucción de la Master Crown y nuevos subjuegos en forma de
-                Magolor's Tome Trackers , Booming Blasters y Samurai Kirby 100, así como otros subjuegos que regresan de
-                entregas anteriores de la serie que se pueden encontrar en el nuevo parque temático Merry Magoland . El
-                juego parece utilizar un diseño basado en una historia más emergente que se vio anteriormente en uno de
-                los prototipos de Kirby GCN .
+                        Kirby's Return to Dream Land Deluxe es una nueva versión mejorada de Kirby's Return to Dream
+                        Land , que
+                        presenta un estilo artístico actualizado pero que en su mayoría contiene el mismo contenido que
+                        el
+                        lanzamiento original. Presenta las nuevas habilidades Mecha y Sand Copy junto con el regreso de
+                        Festival
+                        , un nuevo modo de juego titulado Magolor Epilogue: The Interdimensional Traveler que cuenta los
+                        eventos
+                        del regreso de Magolor después de la destrucción de la Master Crown y nuevos subjuegos en forma
+                        de
+                        Magolor's Tome Trackers , Booming Blasters y Samurai Kirby 100, así como otros subjuegos que
+                        regresan de
+                        entregas anteriores de la serie que se pueden encontrar en el nuevo parque temático Merry
+                        Magoland . El
+                        juego parece utilizar un diseño basado en una historia más emergente que se vio anteriormente en
+                        uno de
+                        los prototipos de Kirby GCN .
 
-                El juego presenta un nuevo objeto coleccionable en forma de máscaras de disfraces . Estas se recolectan
-                en Merry Magoland a través de las recompensas de Stamp Rally , que se obtienen al jugar subjuegos. Hay
-                86 máscaras para recolectar en total. Algunas de las máscaras son solo cosméticas, mientras que otras
-                cambian las líneas de voz del personaje del jugador. Algunas máscaras también brindan mejoras a ataques
-                particulares. El jugador también puede recibir artículos de recuerdo obtenidos de Merry Magoland a
-                través de las recompensas de Stamp Rally. Los artículos de recuerdo son una variedad de artículos a los
-                que se puede acceder conBotón Arriba con Joy-Con de ladopara ayudar al jugador a progresar en el juego.
-                Los boletos de sello también se pueden encontrar en el modo principal para que Kirby los canjee en Merry
-                Magoland por más premios.
+                        El juego presenta un nuevo objeto coleccionable en forma de máscaras de disfraces . Estas se
+                        recolectan
+                        en Merry Magoland a través de las recompensas de Stamp Rally , que se obtienen al jugar
+                        subjuegos. Hay
+                        86 máscaras para recolectar en total. Algunas de las máscaras son solo cosméticas, mientras que
+                        otras
+                        cambian las líneas de voz del personaje del jugador. Algunas máscaras también brindan mejoras a
+                        ataques
+                        particulares. El jugador también puede recibir artículos de recuerdo obtenidos de Merry Magoland
+                        a
+                        través de las recompensas de Stamp Rally. Los artículos de recuerdo son una variedad de
+                        artículos a los
+                        que se puede acceder conBotón Arriba con Joy-Con de ladopara ayudar al jugador a progresar en el
+                        juego.
+                        Los boletos de sello también se pueden encontrar en el modo principal para que Kirby los canjee
+                        en Merry
+                        Magoland por más premios.
 
-                Los jugadores tienen la opción adicional de activar la ayuda de Helper Magolor, una versión de Magolor
-                que le proporciona a Kirby una poción de resistencia que duplica su salud, lo saca de los pozos y,
-                ocasionalmente, proporciona Copy Essences para que Kirby las inhale.
+                        Los jugadores tienen la opción adicional de activar la ayuda de Helper Magolor, una versión de
+                        Magolor
+                        que le proporciona a Kirby una poción de resistencia que duplica su salud, lo saca de los pozos
+                        y,
+                        ocasionalmente, proporciona Copy Essences para que Kirby las inhale.
             </p>
-            <div>
-                <button id="izB">Izquierdo</button>
-                <img id="im1B" src="../Imagenes/Kirby/Imag (1).jpg">
-                <img id="im2B" src="../Imagenes/Kirby/Imag (2).jpg">
-                <img id="im3B" src="../Imagenes/Kirby/Imag (3).jpg">
-                <button id="deB">Derecha</button>
+            <div class="carrusel">
+                <div class="button button_iz">
+                    <button class="button" id="izB">Izquierdo</button>
+                </div>
+                <div class="cont_img_carrusel">
+                    <img class="img_carrusel" id="im1B" src="../Imagenes/Kirby/Imag (1).jpg">
+                        <img class="img_carrusel" id="im2B" src="../Imagenes/Kirby/Imag (2).jpg">
+                        <img class="img_carrusel" id="im3B" src="../Imagenes/Kirby/Imag (3).jpg">
+                </div>
+                        
+                <div class="button button_de">
+                    <button class="button" id="deB">Derecha</button>
+                </div>
             </div>
         </article>
     </section>
 
     <!--Pie de cabecera-->
     <footer>
-        <div>
-            <div>
-                <p>Juegos</p>
-                <ul>
+        <div class="footer_cont">
+            <div class="footer_item_cont">
+                <p class="footer_title">Juegos</p>
+                <ul class="lista">
                     <li>Juego 1</li>
                     <li>Juego 2</li>
                     <li>Juego 3</li>
                 </ul>
             </div>
-            <div>
-                <p>Juegos</p>
-                <ul>
+            <div class="footer_item_cont">
+                <p class="footer_title">Juegos</p>
+                <ul class="lista">
                     <li>Consola 1</li>
                     <li>Consola 2</li>
                     <li>Consola 3</li>
                 </ul>
             </div>
-            <div>
-                <p>Trucos</p>
-                <ul>
+            <div class="footer_item_cont">
+                <p class="footer_title">Trucos</p>
+                <ul class="lista">
                     <li>Truco 1</li>
                     <li>Truco 2</li>
                     <li>Truco 3</li>
                 </ul>
             </div>
-            <div>
-                <p>Soporte tecnico</p>
-                <ul>
-                    <li><a href="./Paginas/contacto.html">Contacto</a></li>
+            <div class="footer_item_cont">
+                <p class="footer_title">Soporte tecnico</p>
+                <ul class="lista">
+                    <li><a id="contacto" href="./Paginas/contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>

@@ -1,0 +1,169 @@
+body{
+    justify-content: center;
+
+    margin: 0;
+    width: 100%;
+
+    background-color: rgb(60, 5, 112);
+}
+
+/*Cabecera*/
+.header{
+    display: flex;
+    
+    justify-content: center;
+    background-color: black;
+
+    padding: 10%;
+}
+
+/*class Logo*/
+    .header-titular{/*div*/
+        display: flex;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0;
+    }
+    a.titulo{
+        font-size: 180%;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    a.titulo:hover{
+        color: aqua;
+    }
+
+/*class navegador*/
+    nav{
+        padding: 0 5% 0 5%;
+    }
+    .header-nav{/*div*/
+        display: flex;
+        justify-content: center;
+    }
+/*Menu*/
+.header-nav-menu {
+    display: inline-block;
+    position: relative;
+    justify-items: center;
+    margin: 0 10% 0 10%;
+    padding: 0 0 0 0;
+    flex: 1;
+}
+        .header-nav-menu-item {
+            display: none;
+            position: absolute;
+            width: 100%;
+            overflow: auto;
+        }
+        .header-nav-menu:hover .header-nav-menu-item{
+            display: block;
+        }
+        .header-nav-menu-item a {
+            display: block;
+            /*Fondo*/
+            background-color: rgb(56, 54, 54);
+            /*Caja*/
+            padding: 10px;
+            /*Texto*/
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        .header-nav-menu-item a:hover {
+            background-color: aqua;
+        }
+            /*Boton*/
+            .header-nav-menu-button{
+                background-color: transparent;
+                color: #FFFFFF;
+                border: none;
+                font-size: 120%;
+            }
+            .header-nav-menu-button:hover{
+                background-color: rgb(46, 44, 44);
+                color: aqua;
+            }
+
+            #unico{
+                display: flex;
+                justify-content: center;
+            }
+        #pag_truco{
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 130%;
+            padding: 0;
+        }
+        #pag_truco:hover{
+            color: aqua;
+        }
+
+/*Section*/
+section{
+    background-color: rgb(95, 12, 173);
+    height: 100%;
+    display: flex;
+    margin: 0 5%;
+}
+p{
+    padding: 0 10% 0 10%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+img.presen{
+    width: 100%;
+}
+div.carrusel{
+    display: flex;
+    padding: 0 10% 0 10%;
+}
+img.img_carrusel{
+    height: auto;
+}
+.button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    height: 200px;
+}
+div.button{
+    display: flex;
+}
+.cont_img_carrusel{
+    display: flex;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*Centra todos los elementos que contenga*/
+    background-color: rgba(5, 5, 5, 0.514);
+    /*Color del contorno del header*/
+    top: 0;
+    width: 100%;
+}
+.lista{
+    list-style-type: none;
+    padding: 0;
+}
+#contacto{
+    text-decoration: none;
+    color: black;
+}
+.footer_cont{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_title{
+    margin: 0;
+    padding-top: 10%;
+}
+.footer_item_cont{
+    padding: 0;
+}
