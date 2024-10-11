@@ -7,6 +7,7 @@
     <title>Contacto</title>
     <link rel="icon" type="image/png" href="../Imagenes/Logo.png">
     <link rel="stylesheet" href="../Style/style.css">
+    <script src="../Script/Contacto.js"></script>
 </head>
 
 <body>
@@ -31,35 +32,35 @@
                     </li>
                 </ul>
             </div>
+        </nav>
     </header>
     <!--Cuerpo-->
 
     <section>
-        <form id="formContacto" method="post" novalidate >
+        <form id="formContacto" action="javascript:void(0);" method="post" onsubmit="return validarForm()" novalidate>
             <h2>Contacto</h2>
-            <label for="nombreC">Nombre y apellido:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <div id="errorNombre"></div>
-            <br><br>
+            <label for="nombre">Nombre y apellido:</label>
+            <input type="text" id="nombre" name="nombre" onfocus="limpiar(event)" required>
+            <p id="errorNombre" style="visibility: hidden;">Nombre Invalido, solo se tolera letras</p>
+
             <label for="email">Correo Electronico:</label>
-            <input type="text" id="email" name="email" required>
-            <div id="errorEmail"></div>
+            <input type="text" id="email" name="email" onfocus="limpiar(event)" required>
+            <p id="errorEmail" style="visibility: hidden;">Email Invalido debe tener esta forma user@mail.com</p>
 
-            <br><br>
+
             <label for="telefono">Telefono:</label>
-            <input type="text" id="telefono" name="telefono" required>
-            <div id="errorTel"></div>
+            <input type="text" id="telefono" name="telefono" onfocus="limpiar(event)" required>
+            <p id="errorTel" style="visibility: hidden;">Telefono Invalido, solo se tolera numeros</p>
 
-            <br><br>
+            
             <label for="mensaje">Mensaje: </label>
-            <textarea type="text" id="mensaje" name="mensaje" required></textarea>
-            <div id="errorMensaje"></div>
+                <textarea type="text" id="mensaje" name="mensaje" onfocus="limpiar(event)" required></textarea>
+            <p id="errorMensaje" style="visibility: hidden;">Ingrese una cantidad de 10 a 300 caracteres</p>
 
-            <br><br>
-            <input type="submit" value="Enviar"  >
+            <input type="submit"  value="Enviar">
         </form>
     </section>
-<br><br>
+    <br><br>
     <!--Pie de cabecera-->
     <footer>
         <div>
@@ -79,25 +80,30 @@
                     <dd>Consola 3</dd>
                 </dl>
             </div>
-            <div><dl>
-                <dt>Trucos</dt>
+            <div>
+                <dl>
+                    <dt>Trucos</dt>
                     <dd>Truco 1</dd>
                     <dd>Truco 2</dd>
                     <dd>Truco 3</dd>
                 </dl>
             </div>
-            <div><dl>
-                <dt>Soporte tecnico</dt>
-                <dd><a href="contacto.html">Contacto</a></dd>
-            </dl>
-               
+            <div>
+                <dl>
+                    <dt>Soporte tecnico</dt>
+                    <dd><a href="contacto.html">Contacto</a></dd>
+                </dl>
+
             </div>
         </div>
         <div>
-            <p>Todos los contenidos, títulos de juegos, nombres y/o imágenes comerciales, marcas comerciales, arte e imágenes asociadas son marcas comerciales y/o material con derechos de autor de sus propietarios respectivos.Todos los derechos reservados.</p>
+            <p>Todos los contenidos, títulos de juegos, nombres y/o imágenes comerciales, marcas comerciales, arte e
+                imágenes asociadas son marcas comerciales y/o material con derechos de autor de sus propietarios
+                respectivos.Todos los derechos reservados.</p>
         </div>
     </footer>
 
 </body>
+
 
 </html>

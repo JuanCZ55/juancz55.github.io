@@ -5,12 +5,13 @@
 }
 
 body {
-    background-image: url(../Fondos/alex-pronin-8.jpg);
-    background-attachment: fixed;
+    /* background-image: url(../Fondos/alex-pronin-8.jpg); */
+        background-image: url(../Fondos/degradado.jpg);
+    /* background-attachment: fixed; */
     /*Fijar la imagen*/
     background-size: cover;
     /*Escala la imagen al mayor tamaño posible sin estirarla*/
-    background-position: center;
+    /* background-position: center; */
     /*Posisiciona la imagen en el centro*/
 }
 
@@ -87,13 +88,14 @@ footer {
     /*Color del contorno del header*/
     top: 0;
     width: 100%;
+
 }
 
 footer div {
     display: flex;
     justify-content: center;
     /*Centra todos los elementos que contenga*/
-    padding: 0 5% 0 5%;
+    padding: 3% 5% 0 5%;
 }
 
 footer div div {
