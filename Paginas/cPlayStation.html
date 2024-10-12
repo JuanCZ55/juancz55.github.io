@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayStation</title>
     <link rel="icon" type="image/png" href="../Imagenes/Logo.png">
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/HeaFoo.css">
     <script src="../Script/carrCPS.js" defer></script>
     <style>
         * {
             font-size: 20px;
+            text-align: justify;
+
         }
 
         section {
             margin: 0% 10%;
             backdrop-filter: blur(10px);
             background-color: rgba(255, 255, 255, 0.11);
-            padding: 20px;
             border-radius: 10px;
         }
 
@@ -45,47 +46,77 @@
 
         p {
             padding: 0% 10%;
+            font-size: 110%;
         }
 
         h2 {
+            font-size: 190%;
+            padding: 0 10%;
+            text-align: left;
+        }
+
+        #titulo-ps5 {
+            font-size: 195%;
+            text-align: left;
+        }
+
+        h3 {
             font-size: 160%;
+            padding: 0 10%;
+        }
+
+        ul {
+            padding-left: 15%;
+            padding-right: 10%;
+            list-style-type: square;
+        }
+
+        h4 {
+            padding: 0 15%;
+            font-size: 115%;
+
+        }
+        dl{ 
+            padding: 0 10%;
         }
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <div class="logo">
-                <h1>
-                    <a href="../index.html">KARPENT</a>
+            <div class="header-logo">
+                <h1 class="header-titular">
+                    <a class="titulo" href="../index.html">KARPENT</a>
                 </h1>
             </div>
-
-            <div class="navegador">
-                <ul>
-                    <li>
-                        <a href="../Paginas/juegos.html">Videojuegos</a>
-
-                    </li>
-                    <li class="liCentro">
-                        <a href="../Paginas/consolas.html">Consolas</a>
-                        <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../Paginas/trucos.html">Juegos</a>
-                    </li>
-                </ul>
+            
+            <div class="header-nav">
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button">VideoJuegos</button>
+                    <div class="header-nav-menu-item">
+                        <a href="../Paginas/VGTA5.html">Grand Theft Auto V</a>
+                        <a href="../Paginas/VGTASA.html">Grand Theft Auto: San Andreas</a>
+                        <a href="../Paginas/VKirby.html">Kirby's Return to Dream Land Deluxe</a>
+                    </div>
+                </div>
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button">Consolas</button>
+                    <div class="header-nav-menu-item">
+                        <a href="../Paginas/cPlayStation.html">PlayStation</a>
+                        <a href="../Paginas/cXbox.html">Xbox</a>
+                        <a id="header-nav-menu-item" href="../Paginas/cNintendo.html">Nintendo</a>
+                    </div>
+                </div>
+                <div class="header-nav-menu" id="header-nav-menu-truco">
+                    <a id="header-nav-pag-truco" href="../Paginas/trucos.html">Truco</a>
+                </div>
             </div>
     </header>
-
     <section>
-        <h2>Análisis de la PlayStation 5: la consola de Sony destaca por su DualSense y hardware de última generación.
+        <h2><span id="titulo-ps5">Análisis de la PlayStation 5: </span>
+            <br>La consola de Sony
+            destaca por su DualSense y hardware de última generación.
         </h2>
         <img src="../Imagenes/PS5/Inicio.jpg" alt="Imagen Principal"
             style=" width:80%; height:70%; margin: auto; display: flex; flex-direction:colum;" id="ps5">
@@ -102,10 +133,10 @@
             durante las sesiones de juego más intensas. Además, la disposición de los puertos y botones ha sido
             cuidadosamente estudiada para facilitar su uso."</p>
         <br>
-        <h3>PlayStation 5: especificaciones técnicas</h3>
+        <h3>Especificaciones Técnicas</h3>
         <ul>
-            <li>Procesador: 8 núcleos AMD Ryzen Zen 2 x84-64 a 3,5 GHz (frecuencia variable).</li>
-            <li>Tarjeta gráfica: 10,28 TFLOPS, 36 CUs a 2,23 GHz (frecuencia variable).</li>
+            <li>Procesador: 8 núcleos AMD Ryzen Zen 2 x84-64 a 3,5 GHz.</li>
+            <li>Tarjeta gráfica: 10,28 TFLOPS, 36 CUs a 2,23 GHz.</li>
             <li>Arquitectura de la GPU: AMD Radeon RDNA 2 a medida.</li>
             <li>Memoria/Interfaz: 16 GB GDDR6 / 256-bit.</li>
             <li>Ancho de banda de la memoria: 448 GB/s.</li>
@@ -177,13 +208,13 @@
             de aire más eficiente.</p>
 
         <div id="carrusel">
-            <button id="iz" style="background: none; border: none; ;"><img src="../Imagenes/PS5/icons8-atrás-100.png"
+            <button id="iz" style="background: none; border: none; ;"><img src="../Iconos/Izquierda.png"
                     alt="atras" style="width: 60px;height: 60px;"></button>
             <img src="../Imagenes/PS5/Imagen (1).jpg" alt="1" id="im1">
             <img src="../Imagenes/PS5/Imagen (2).jpg" alt="2" id="im2">
             <img src="../Imagenes/PS5/Imagen (3).jpg" alt="3" id="im3">
             <button id="de" ; style="background: none; border: none; "><img
-                    src="../Imagenes/PS5/icons8-adelante-100.png" alt="adelante"
+                    src="../Iconos/Derecha.png" alt="adelante"
                     style="width: 60px;height: 60px;"></button>
         </div>
         <p>En la parte frontal de la PS5, encontramos dos puertos USB: un USB 3.1 Tipo C de alta velocidad y un USB 2.0
@@ -234,7 +265,7 @@
             configuraciones ofrece una gran flexibilidad al jugador."</p>
         <h3>¿La Calidad esta a la altura?</h3>
         <p>
-            <!-- agregar padding y margin -->
+            
         <dl>
             <dt><b>Resolución 4K y HDR:</b></dt>
             <dd><b>Super Resolución:</b> Además del 4K nativo, la PS5 puede utilizar técnicas de super resolución para
@@ -278,23 +309,23 @@
             genéricas. Hola, sensaciones precisas.
         </p>
         <dl>
-            <dt>Gatillos Adaptativos: </dt>
+            <dt><b>Gatillos Adaptativos: </b></dt>
             <dd>Esta característica permite a los desarrolladores programar los gatillos para que ofrezcan diferentes
                 niveles de resistencia, simulando acciones como tensar un arco o acelerar un vehículo. Los resultados
                 son sorprendentemente realistas y añaden una nueva dimensión a la jugabilidad.</dd>
-            <dt>Retroalimentación Háptica: </dt>
+            <dt><b>Retroalimentación Háptica: </b></dt>
             <dd>Más allá de las vibraciones tradicionales, la retroalimentación háptica del DualSense ofrece sensaciones
                 táctiles más precisas y detalladas. Por ejemplo, puedes sentir la textura de diferentes superficies o la
                 fuerza de un impacto.</dd>
-            <dt>Micrófonos Integrados: </dt>
+            <dt><b>Micrófonos Integrados: </b></dt>
             <dd>El DualSense incorpora micrófonos de alta calidad que permiten chatear con amigos sin necesidad de
                 auriculares adicionales. Esta característica resulta especialmente útil para partidas rápidas o sesiones
                 de juego casual.</dd>
-            <dt>Panel Táctil: </dt>
-            <dd>El panel táctil, ya presente en el DualSense anterior, se ha mejorado y ahora ofrece más posibilidades
+            <dt><b>Panel Táctil: </dt>
+            <dd>El panel táctil, ya presente en el DualS</b>ense anterior, se ha mejorado y ahora ofrece más posibilidades
                 de interacción. Los desarrolladores pueden utilizar el panel táctil para simular acciones como tocar
                 instrumentos, deslizar objetos o incluso sentir la lluvia.</dd>
-            <dt>Diseño Ergonómico:</dt>
+            <dt><b>Diseño Ergonómico:</b></dt>
             <dd>El DualSense presenta un diseño más grande y ergonómico en comparación con sus predecesores, lo que lo
                 hace más cómodo de sostener durante largas sesiones de juego.</dd>
 
@@ -324,7 +355,6 @@
     </section>
 
 
-    </section>
     <footer>
         <div>
             <div>

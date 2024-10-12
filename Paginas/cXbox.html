@@ -10,35 +10,45 @@
     <script src="../Script/carrCXboxS.js" defer></script>
     <script src="../Script/carrCXboxX.js" defer></script>
     <style>
+        *{
+            box-sizing: border-box;
+
+        }
         h2 {
             font-size: 60px;
             text-align: center;
         }
 
         h3 {
+            padding: 0 10%;
             font-size: 38px;
         }
 
         p {
             font-size: 30px;
-            text-align: left;
-            padding: 0% 80% 0 80% 0;
+            padding: 0 10%;
             text-align: justify;
-            width: 100%;
         }
 
         img {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            width: 80%;
-            height: 70%;
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
         }
 
         dl {
             font-size: 30px;
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        dt {
+            font-size: 130%;
+        }
+        dd{
+            margin: 3% 0;
+            padding: 0;
         }
 
         section {
@@ -58,29 +68,30 @@
 
         .imgcarrusel {
             width: 25%;
-            height: 25%;
-            margin: 0px;
-            padding: 0px;
+            height: auto;
             display: unset;
+        }
+        #carruselx,#carrusels{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
 
         .contenedor {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             margin: 2px;
-            height: 2200px;
         }
 
         .columnas {
-            width: 45%;
+            max-width: 48%;
             height: auto;
+            padding: 0 2%;
+            box-sizing: border-box; 
         }
 
-        .imgColum {
-            height: 30%;
-            width: auto;
-
-        }
+        
 
         .parrfo-columnaXbox {
             text-align: left;
@@ -346,7 +357,7 @@
             funciones de nueva generación.
         </p>
 
-        <h3>¿Físico o digital? El dilema de la unidad de disco en Xbox Series X y Series S</h3>
+        <h3>¿Físico o digital? El dilema de la unidad de disco</h3>
         <p>
             La decisión de adquirir una Xbox Series X o Series S va más allá de las especificaciones técnicas. La
             presencia o ausencia de una unidad lectora de discos es un factor clave que puede influir en la elección del
@@ -367,10 +378,8 @@
                 <img src="../Imagenes/Xbox/ss.jpg" alt="S" class="imgColum">
                 <h2>Series S</h2>
                 <p class="parrfo-columnaXbox">
-                    <b class="b-xbox-">Ideal para:</b> Jugadores con presupuesto limitado, quienes priorizan el tamaño
-                    compacto y buscan
-                    una
-                    experiencia de juego de alta calidad en general.
+                    <b class="b-xbox-">Ideal para:</b> Quienes buscan una consola asequible y compacta, sin sacrificar
+                    calidad en la experiencia de juego.
                 </p>
                 <br>
                 <dl>
@@ -399,7 +408,7 @@
                 <img src="../Imagenes/Xbox/x.jpg" alt="X" class="imgColum">
                 <h2>Series X</h2>
                 <p class="parrfo-columnaXbox">
-                    <b class="b-xbox-">Ideal para:</b> Jugadores exigentes que buscan la máxima potencia gráfica y una
+                    <b class="b-xbox-">Ideal para:</b> Si buscas la máxima potencia gráfica y una
                     experiencia de
                     juego de ultra alta definición.
                 </p>
@@ -430,15 +439,16 @@
 
                 </dl>
             </div>
-            <p>Ambas Consolas cuentan con el mismo acceso a cientos de juegos por una suscripción mensual del Xbox Game
-                Pass
-                y con su retrocompatibilidad.
-                <br>
-                Todo depende de ti
-            </p>
+
         </div>
 
-
+        <p id="ultimo-parrafo">Ambas Consolas cuentan con el mismo acceso a cientos de juegos por una suscripción
+            mensual del Xbox Game
+            Pass
+            y con su retrocompatibilidad.
+            <br>
+            Todo depende de ti
+        </p>
     </section>
 
     <footer>
