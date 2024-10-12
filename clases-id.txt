@@ -1,0 +1,17 @@
+Exclusivo de VKirby
+Clases:
+_ kirby-article-introduccion
+_ kirby-div-container-introduccion
+_ kirby-h2-title-principal
+_ kirby-img-principal
+_ kirby-article-informacion
+_ kirby-h2-title-introduccion
+_ kirbt-p-introduccion
+_ kirby-img-intruduccion
+_ kirby-h2-title-introduccion
+_ kirby-carrusel
+_ kirby-button
+_ kirby-cont-img-carrusel
+_ kirby-img-carrusel
+ID:
+_ Renombrar los ID asignados.
