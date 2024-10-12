@@ -1,7 +1,7 @@
 * {
     cursor: url(../Cursor/puntero.png) 0 0, auto;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    color: #eafff6;
 }
 
 body {
@@ -111,6 +111,7 @@ footer div div ul {
     /*Elimina los puntos al comienzo de la lista*/
     margin: 0;
     padding: 0;
+    width: 100%;
     /*Elimina el padign que quedaba al inicio del los li (el pequeño cuadro)*/
 }
 
