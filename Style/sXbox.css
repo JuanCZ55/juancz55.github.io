@@ -1,0 +1,104 @@
+
+.titulox {
+    font-size: 60px;
+    text-align: center;
+}
+
+.subtitulos {
+    padding: 0 10%;
+    font-size: 38px;
+}
+
+.parrafoX{
+    font-size: 30px;
+    padding: 0 10%;
+    text-align: justify;
+}
+
+#imagen-inicioX {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.listaX {
+    font-size: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.dtX {
+    font-size: 130%;
+}
+.ddX{
+    margin: 3% 0;
+    padding: 0;
+}
+
+#sectionX{
+    margin: 0% 10%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(36, 34, 34, 0.184);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tablasX {
+    text-align: left;
+    margin: auto;
+    padding: 0 10%;
+    font-size: 130%;
+}
+
+.imgcarrusel {
+    width: 25%;
+    height: auto;
+    display: unset;
+}
+#carruselx,#carrusels{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+.columnas {
+    max-width: 48%;
+    height: auto;
+    padding: 0 2%;
+    box-sizing: border-box; 
+}
+
+
+
+.parrfo-columnaXbox {
+    font-size: 25px;
+       text-align: justify;}
+
+.columnas dd {
+    padding: 4% 0;
+}
+
+.b-xbox-et {
+    font-size: 110%;
+    padding-top: 150px;
+}
+#titulo-columnas-xbox{
+    font-size: 500%;
+    text-align: center;
+}
+.botonesC{
+    background: none;
+    border: none;
+}
+.botonesC img{
+    width: 50%;
+    height: auto;
+}

@@ -6,162 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xbox</title>
     <link rel="icon" type="image/png" href="../Imagenes/Logo.png">
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/HeaFoo.css">
+    <link rel="stylesheet" href="../Style/sXbox.css">
+
     <script src="../Script/carrCXboxS.js" defer></script>
     <script src="../Script/carrCXboxX.js" defer></script>
-    <style>
-        *{
-            box-sizing: border-box;
 
-        }
-        h2 {
-            font-size: 60px;
-            text-align: center;
-        }
 
-        h3 {
-            padding: 0 10%;
-            font-size: 38px;
-        }
-
-        p {
-            font-size: 30px;
-            padding: 0 10%;
-            text-align: justify;
-        }
-
-        img {
-            display: block;
-            margin: 0 auto;
-            width: 100%;
-            height: auto;
-        }
-
-        dl {
-            font-size: 30px;
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-
-        dt {
-            font-size: 130%;
-        }
-        dd{
-            margin: 3% 0;
-            padding: 0;
-        }
-
-        section {
-            margin: 0% 10%;
-            backdrop-filter: blur(10px);
-            background-color: rgba(36, 34, 34, 0.184);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        table {
-            text-align: left;
-            margin: auto;
-            padding-right: 10px;
-            font-size: 130%;
-        }
-
-        .imgcarrusel {
-            width: 25%;
-            height: auto;
-            display: unset;
-        }
-        #carruselx,#carrusels{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contenedor {
-            display: flex;
-            justify-content: center;
-            margin: 2px;
-        }
-
-        .columnas {
-            max-width: 48%;
-            height: auto;
-            padding: 0 2%;
-            box-sizing: border-box; 
-        }
-
-        
-
-        .parrfo-columnaXbox {
-            text-align: left;
-            width: 100%;
-            margin: auto;
-        }
-
-        .columnas dd {
-            padding: 4% 0;
-        }
-
-        .b-xbox-et {
-            font-size: 110%;
-            padding-top: 150px;
-        }
-
-        #titulo-columnas-xbox {
-            font-size: 400%;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <div class="logo">
-                <h1>
-                    <a href="../index.html">KARPENT</a>
+            <div class="header-logo">
+                <h1 class="header-titular">
+                    <a class="titulo" href="../index.html">KARPENT</a>
                 </h1>
             </div>
-
-            <div class="navegador">
-                <ul>
-                    <li>
-                        <a href="../Paginas/juegos.html">Videojuegos</a>
-                    </li>
-                    <li class="liCentro">
-                        <a href="../Paginas/consolas.html">Consolas</a>
-                    </li>
-                    <li>
-                        <a href="../Paginas/trucos.html">Juegos</a>
-                    </li>
-                </ul>
+            <div class="header-nav">
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button">VideoJuegos</button>
+                    <div class="header-nav-menu-item">
+                        <a href="../Paginas/VGTA5.html">Grand Theft Auto V</a>
+                        <a href="../Paginas/VGTASA.html">Grand Theft Auto: San Andreas</a>
+                        <a href="../Paginas/VKirby.html">Kirby's Return to Dream Land Deluxe</a>
+                    </div>
+                </div>
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button">Consolas</button>
+                    <div class="header-nav-menu-item">
+                        <a href="../Paginas/cPlayStation.html">PlayStation</a>
+                        <a href="../Paginas/cXbox.html">Xbox</a>
+                        <a id="header-nav-menu-item" href="../Paginas/cNintendo.html">Nintendo</a>
+                    </div>
+                </div>
+                <div class="header-nav-menu" id="header-nav-menu-truco">
+                    <a id="header-nav-pag-truco" href="../Paginas/trucos.html">Truco</a>
+                </div>
             </div>
     </header>
 
-    <section>
-        <h2>Xbox Series X vs Xbox Series S <br>¿Cual Elegir?</h2>
-        <img src="../Imagenes/Xbox/Inicio.jpeg" alt="Inicio">
-        <p>La batalla entre las consolas de nueva generación sigue más viva que nunca, y Xbox ha lanzado dos propuestas
+    <article id="sectionX">
+        <h1 class="titulox">Xbox Series X vs Xbox Series S <br>¿Cual Elegir?</h1>
+        <img src="../Imagenes/Xbox/Inicio.jpeg" alt="Inicio" id="imagen-inicioX">
+        <p class="parrafoX">La batalla entre las consolas de nueva generación sigue más viva que nunca, y Xbox ha
+            lanzado dos propuestas
             clave: la Serie S y la Serie X. Ambas ofrecen experiencias innovadoras para los jugadores, pero sus
             diferencias en potencia, almacenamiento y precio las hacen atractivas para distintos tipos de usuarios. En
             este artículo, compararemos detalladamente las características de estas consolas, para que descubras cuál es
             la más adecuada para ti.</p>
 
         <div id="carruselx">
-            <button id="iz1" style="background: none; border: none; ;"><img src="../Iconos/Izquierda.png" alt="atras"
-                    style="width: 60px;height: 60px;"></button>
-            <img src="../Imagenes/Xbox/XboxX/Imagen (1).png" alt="3" id="imc0" class="imgcarrusel">
-            <img src="../Imagenes/Xbox/XboxX/Imagen (2).png" alt="4" id="imc1" class="imgcarrusel">
-            <img src="../Imagenes/Xbox/XboxX/Imagen (3).png" alt="5" id="imc2" class="imgcarrusel">
-            <button id="de1" ; style="background: none; border: none; "><img src="../Iconos/Derecha.png" alt="adelante"
-                    style="width: 60px;height: 60px;"></button>
+            <button class="botonesC" id="iz1"><img src="../Iconos/Izquierda.png" alt="atras"></button>
+            <img src="../Imagenes/Xbox/XboxX/Imagen (1).png" alt="Imagen1" id="imc0" class="imgcarrusel">
+            <img src="../Imagenes/Xbox/XboxX/Imagen (2).png" alt="Imagen2" id="imc1" class="imgcarrusel">
+            <img src="../Imagenes/Xbox/XboxX/Imagen (3).png" alt="Imagen3" id="imc2" class="imgcarrusel">
+            <button class="botonesC" id="de1" ;><img src="../Iconos/Derecha.png" alt="adelante"></button>
         </div>
-        <p>Xbox Series X: Desde el primer momento, se siente como una consola robusta y sólida. Su tamaño es
+        <p class="parrafoX">Xbox Series X: Desde el primer momento, se siente como una consola robusta y sólida. Su
+            tamaño es
             considerablemente mayor, pero eso tiene una razón de ser: es un dispositivo pensado para quienes desean
             potencia máxima. Su diseño elegante en forma de torre permite mantener una buena ventilación, necesaria para
             soportar el hardware que lleva dentro.</p>
-        <table>
+        <table class="tablasX">
             <tr>
                 <th>Procesador (CPU)</th>
                 <td>8 núcleos a 3.8 GHz (3.66 GHz con SMT) Custom Zen 2</td>
@@ -226,19 +133,18 @@
 
         </table>
         <div id="carrusels">
-            <button id="iz2" style="background: none; border: none; ;"><img src="../Iconos/Izquierda.png" alt="atras"
-                    style="width: 60px;height: 60px;"></button>
-            <img src="../Imagenes/Xbox/XboxS/Imagen (1).png" alt="3" id="imc3" class="imgcarrusel">
-            <img src="../Imagenes/Xbox/XboxS/Imagen (2).png" alt="4" id="imc4" class="imgcarrusel">
-            <img src="../Imagenes/Xbox/XboxS/Imagen (3).png" alt="5" id="imc5" class="imgcarrusel">
-            <button id="de2" ; style="background: none; border: none; "><img src="../Iconos/Derecha.png" alt="adelante"
-                    style="width: 60px;height: 60px;"></button>
+            <button class="botonesC" id="iz2"><img src="../Iconos/Izquierda.png" alt="atras"></button>
+            <img src="../Imagenes/Xbox/XboxS/Imagen (1).png" alt="Imagen1" id="imc3" class="imgcarrusel">
+            <img src="../Imagenes/Xbox/XboxS/Imagen (2).png" alt="Imagen2" id="imc4" class="imgcarrusel">
+            <img src="../Imagenes/Xbox/XboxS/Imagen (3).png" alt="Imagen3" id="imc5" class="imgcarrusel">
+            <button class="botonesC" id="de2" ;><img src="../Iconos/Derecha.png" alt="adelante"></button>
         </div>
-        <p>Xbox Series S: Aquí encontramos lo opuesto, una consola mucho más pequeña y ligera. Es muy fácil de acomodar
+        <p class="parrafoX">Xbox Series S: Aquí encontramos lo opuesto, una consola mucho más pequeña y ligera. Es muy
+            fácil de acomodar
             en cualquier espacio de tu sala de juegos. Ideal si prefieres algo más discreto. El diseño compacto no
             afecta su rendimiento en exceso, aunque claro, sus limitaciones están más ligadas a su potencia que a su
             tamaño.</p>
-        <table>
+        <table class="tablasX">
             <tr>
                 <th>Procesador (CPU)</th>
                 <td>8 núcleos a 3.6 GHz (3.4 GHz con SMT) Custom Zen 2</td>
@@ -304,188 +210,220 @@
         </table>
 
 
-        <h3>Rendimiento y Gráficos: Un análisis más profundo
-        </h3>
-        <dl>
-            <dt><b class="b-xbox-et">Ray Tracing:</b></dt>
-            <dd>Ambas consolas soportan ray tracing, una tecnología que simula el comportamiento de la luz en tiempo
-                real, ofreciendo efectos visuales más realistas como sombras, reflejos y refracciones. Sin embargo, la
+        <h2 class="subtitulos">Rendimiento y Gráficos: Un análisis más profundo
+        </h2>
+        <dl class="listaX">
+            <dt class="dtX"><b class="b-xbox-et">Ray Tracing:</b></dt>
+            <dd class="ddX">Ambas consolas soportan ray tracing, una tecnología que simula el comportamiento de la
+                luz en tiempo
+                real, ofreciendo efectos visuales más realistas como sombras, reflejos y refracciones. Sin embargo,
+                la
                 Series X, al tener una GPU más potente, puede ofrecer una implementación más completa y con mayor
                 rendimiento.
             </dd>
-            <dt><b class="b-xbox-">FPS Boost: </b></dt>
-            <dd>Esta característica permite a los juegos de Xbox One aprovechar la potencia de las consolas de nueva
+            <dt class="dtX"><b class="b-xbox-">FPS Boost: </b></dt>
+            <dd class="ddX">Esta característica permite a los juegos de Xbox One aprovechar la potencia de las
+                consolas de nueva
                 generación, ofreciendo tasas de fotogramas más altas y una experiencia de juego más fluida en ambas
                 Series X y Series S.
             </dd>
-            <dt><b class="b-xbox-">Quick Resume: </b></dt>
-            <dd>Tanto la Series X como la Series S permiten reanudar varios juegos casi instantáneamente, gracias a su
+            <dt class="dtX"><b class="b-xbox-">Quick Resume: </b></dt>
+            <dd class="ddX">Tanto la Series X como la Series S permiten reanudar varios juegos casi
+                instantáneamente, gracias a su
                 SSD de alta velocidad. Esta característica es especialmente útil para aquellos que cambian
                 constantemente de juego.
             </dd>
-            <dt><b class="b-xbox-">Juegos optimizados para Series X|S:</b></dt>
-            <dd> Muchos juegos se están optimizando específicamente para las nuevas consolas, aprovechando al máximo su
+            <dt class="dtX"><b class="b-xbox-">Juegos optimizados para Series X|S:</b></dt>
+            <dd class="ddX"> Muchos juegos se están optimizando específicamente para las nuevas consolas,
+                aprovechando al máximo su
                 hardware. Esto se traduce en mejores gráficos, mayor rendimiento y nuevas características.
             </dd>
-            <dt><b class="b-xbox-">Escalado de resolución: </b></dt>
-            <dd>Ambas consolas utilizan técnicas de escalado de resolución para mejorar la calidad de imagen en
-                televisores que no son 4K. La Series X, gracias a su mayor potencia, puede ofrecer un escalado de mayor
+            <dt class="dtX"><b class="b-xbox-">Escalado de resolución: </b></dt>
+            <dd class="ddX">Ambas consolas utilizan técnicas de escalado de resolución para mejorar la calidad de
+                imagen en
+                televisores que no son 4K. La Series X, gracias a su mayor potencia, puede ofrecer un escalado de
+                mayor
                 calidad.
 
             </dd>
         </dl>
-        <p>
-            Tanto Xbox Series X como Series S representan un salto significativo en la potencia y las capacidades de las
+        <p class="parrafoX">
+            Tanto Xbox Series X como Series S representan un salto significativo en la potencia y las capacidades de
+            las
             consolas de videojuegos. La Series X ofrece una experiencia de juego de última generación con gráficos
-            impresionantes y un rendimiento sólido, mientras que la Series S es una excelente opción para aquellos que
-            buscan una consola más asequible sin sacrificar la calidad de la imagen. A medida que el catálogo de juegos
+            impresionantes y un rendimiento sólido, mientras que la Series S es una excelente opción para aquellos
+            que
+            buscan una consola más asequible sin sacrificar la calidad de la imagen. A medida que el catálogo de
+            juegos
             exclusivos crece y los desarrolladores aprovechan al máximo las capacidades de estas consolas, podemos
             esperar ver experiencias de juego cada vez más inmersivas y emocionantes.
         </p>
-        <h3>Almacenamiento</h3>
-        <p>
-            La Xbox Series X incorpora un SSD interno de 1 TB y es compatible con unidades externas USB 3.1. Por otro
-            lado, la Series S, en su versión inicial, tiene una memoria SSD de 512 GB, lo que puede limitar un poco la
-            cantidad de juegos instalados, aunque eso dependerá de las exigencias del jugador y si necesitar tener más
+        <h2 class="subtitulos">Almacenamiento</h2>
+        <p class="parrafoX">
+            La Xbox Series X incorpora un SSD interno de 1 TB y es compatible con unidades externas USB 3.1. Por
+            otro
+            lado, la Series S, en su versión inicial, tiene una memoria SSD de 512 GB, lo que puede limitar un
+            poco la
+            cantidad de juegos instalados, aunque eso dependerá de las exigencias del jugador y si necesitar
+            tener más
             de siete títulos instalados al mismo tiempo.
             <br>
-            Como solución, Xbox lanzó la versión carbon black, que es un modelo de la Series S con capacidad de 1 TB de
+            Como solución, Xbox lanzó la versión carbon black, que es un modelo de la Series S con capacidad de
+            1 TB de
             almacenamiento.
             <br>
-            Ambas consolas presentan una ranura de expansión para una unidad de disco propietaria adicional, la tarjeta
-            de expansión de almacenamiento Seagate para Xbox Series X/S, que asegura un rendimiento óptimo y todas las
+            Ambas consolas presentan una ranura de expansión para una unidad de disco propietaria adicional, la
+            tarjeta
+            de expansión de almacenamiento Seagate para Xbox Series X/S, que asegura un rendimiento óptimo y
+            todas las
             funciones de nueva generación.
         </p>
 
-        <h3>¿Físico o digital? El dilema de la unidad de disco</h3>
-        <p>
-            La decisión de adquirir una Xbox Series X o Series S va más allá de las especificaciones técnicas. La
-            presencia o ausencia de una unidad lectora de discos es un factor clave que puede influir en la elección del
-            consumidor. Los jugadores más tradicionales, que valoran la experiencia de coleccionar juegos físicos y la
-            posibilidad de revenderlos, se inclinarán por la Series X. Por otro lado, aquellos que priorizan la
-            comodidad, la rapidez de acceso y la optimización del espacio, encontrarán en la Series S una opción
+        <h2 class="subtitulos">¿Físico o digital? El dilema de la unidad de disco</h2>
+        <p class="parrafoX">
+            La decisión de adquirir una Xbox Series X o Series S va más allá de las especificaciones
+            técnicas. La
+            presencia o ausencia de una unidad lectora de discos es un factor clave que puede influir en la
+            elección del
+            consumidor. Los jugadores más tradicionales, que valoran la experiencia de coleccionar juegos
+            físicos y la
+            posibilidad de revenderlos, se inclinarán por la Series X. Por otro lado, aquellos que priorizan
+            la
+            comodidad, la rapidez de acceso y la optimización del espacio, encontrarán en la Series S una
+            opción
             atractiva.
             <br>
-            La elección entre una consola física o digital también tiene implicaciones económicas. Si bien la Series S
-            tiene un precio más accesible, los costos a largo plazo pueden variar dependiendo de las ofertas y
+            La elección entre una consola física o digital también tiene implicaciones económicas. Si bien
+            la Series S
+            tiene un precio más accesible, los costos a largo plazo pueden variar dependiendo de las ofertas
+            y
             promociones disponibles para juegos físicos y digitales.
             <br>
             Despues de Todo esta informacion queda la pregunta:
         </p>
-        <h3 id="titulo-columnas-xbox">¿Con cual me quedo?</h3>
-        <div class="contenedor">
-            <div class="columnas">
-                <img src="../Imagenes/Xbox/ss.jpg" alt="S" class="imgColum">
-                <h2>Series S</h2>
-                <p class="parrfo-columnaXbox">
-                    <b class="b-xbox-">Ideal para:</b> Quienes buscan una consola asequible y compacta, sin sacrificar
-                    calidad en la experiencia de juego.
-                </p>
-                <br>
-                <dl>
-                    <dt><b class="b-xbox-">Ventajas</b></dt><br>
-                    <dd><b class="b-xbox-">Precio más accesible: </b>Es una opción más económica para adentrarse en la
-                        nueva generación.
-                    </dd>
-                    <dd><b class="b-xbox-">Tamaño compacto:</b> Fácil de colocar en cualquier espacio.
-                    </dd>
-                    <dd><b class="b-xbox-">Juegos optimizados:</b> Muchos juegos están diseñados para aprovechar al
-                        máximo su hardware,
-                        ofreciendo una experiencia visual impresionante.</dd>
-                    <dt> <b class="b-xbox-">Desventajas:</b> </dt>
-                    <dd><b class="b-xbox-">Menor potencia gráfica:</b> No alcanza resoluciones 4K nativas, aunque ofrece
-                        un excelente
-                        escalado.
-                    </dd>
-                    <dd><b class="b-xbox-">Menor almacenamiento interno:</b> 512 GB, que puede llenarse rápidamente si
-                        instalas muchos
-                        juegos.
-                    </dd>
-
-                </dl>
-            </div>
-            <div class="columnas">
-                <img src="../Imagenes/Xbox/x.jpg" alt="X" class="imgColum">
-                <h2>Series X</h2>
-                <p class="parrfo-columnaXbox">
-                    <b class="b-xbox-">Ideal para:</b> Si buscas la máxima potencia gráfica y una
-                    experiencia de
-                    juego de ultra alta definición.
-                </p>
-
-                <br>
-                <br>
-                <dl>
-                    <dt><b class="b-xbox-">Ventajas</b></dt>
+        <h3 id="titulo-columnas-xbox">¿Con cual me quedo?</h2>
+            <div class="contenedor">
+                <div class="columnas">
+                    <img src="../Imagenes/Xbox/ss.jpg" alt="S" class="imgColum">
+                    <h2 class="subtitulos">Series S</h2>
+                    <p class="parrafoX">
+                        <b class="b-xbox-">Ideal para:</b> Quienes buscan una consola asequible y compacta, sin
+                        sacrificar
+                        calidad en la experiencia de juego.
+                    </p>
                     <br>
-                    <dd><b class="b-xbox-">Mayor potencia gráfica: </b>Capaz de renderizar juegos en 4K nativo con altas
-                        tasas de
-                        fotogramas.
-                    </dd>
-                    <dd><b class="b-xbox-">Ray tracing en tiempo real:</b> Efectos de iluminación y reflejos más
-                        realistas.
-                    </dd>
-                    <dd><b class="b-xbox-">Mayor almacenamiento interno:</b> 1 TB, lo que permite instalar más juegos
-                        sin tener que
-                        preocuparse
-                        por el espacio.
-                    </dd>
+                    <dl class="listaX">
+                        <dt class="dtX"><b class="b-xbox-">Ventajas</b></dt><br>
+                        <dd class="ddX"><b class="b-xbox-">Precio más accesible: </b>Es una opción más económica
+                            para adentrarse en la
+                            nueva generación.
+                        </dd>
+                        <dd class="ddX"><b class="b-xbox-">Tamaño compacto:</b> Fácil de colocar en cualquier
+                            espacio.
+                        </dd>
+                        <dd class="ddX"><b class="b-xbox-">Juegos optimizados:</b> Muchos juegos están diseñados
+                            para aprovechar al
+                            máximo su hardware,
+                            ofreciendo una experiencia visual impresionante.</dd>
+                        <dt class="dtX"> <b class="b-xbox-">Desventajas:</b> </dt>
+                        <dd class="ddX"><b class="b-xbox-">Menor potencia gráfica:</b> No alcanza resoluciones
+                            4K nativas, aunque ofrece
+                            un excelente
+                            escalado.
+                        </dd>
+                        <dd class="ddX"><b class="b-xbox-">Menor almacenamiento interno:</b> 512 GB, que puede
+                            llenarse rápidamente si
+                            instalas muchos
+                            juegos.
+                        </dd>
 
-                    <dt> <b class="b-xbox-">Desventajas:</b> </dt>
-                    <dd><b class="b-xbox-">Precio más elevado:</b> Es una inversión mayor.
+                    </dl>
+                </div>
+                <div class="columnas">
+                    <img src="../Imagenes/Xbox/x.jpg" alt="X" class="imgColum">
+                    <h2 class="subtitulos">Series X</h2>
+                    <p class="parrafoX">
+                        <b class="b-xbox-">Ideal para:</b> Si buscas la máxima potencia gráfica y una
+                        experiencia de
+                        juego de ultra alta definición.
+                    </p>
 
-                    </dd>
-                    <dd><b class="b-xbox-">Tamaño más grande: </b>Ocupa más espacio.</dd>
+                    <br>
+                    <br>
+                    <dl class="listaX">
+                        <dt class="dtX"><b class="b-xbox-">Ventajas</b></dt>
+                        <br>
+                        <dd class="ddX"><b class="b-xbox-">Mayor potencia gráfica: </b>Capaz de renderizar
+                            juegos en 4K nativo con altas
+                            tasas de
+                            fotogramas.
+                        </dd>
+                        <dd class="ddX"><b class="b-xbox-">Ray tracing en tiempo real:</b> Efectos de
+                            iluminación y reflejos más
+                            realistas.
+                        </dd>
+                        <dd class="ddX"><b class="b-xbox-">Mayor almacenamiento interno:</b> 1 TB, lo que
+                            permite instalar más juegos
+                            sin tener que
+                            preocuparse
+                            por el espacio.
+                        </dd>
 
-                </dl>
+                        <dt class="dtX"> <b class="b-xbox-">Desventajas:</b> </dt>
+                        <dd class="ddX"><b class="b-xbox-">Precio más elevado:</b> Es una inversión mayor.
+
+                        </dd>
+                        <dd class="ddX"><b class="b-xbox-">Tamaño más grande: </b>Ocupa más espacio.</dd>
+
+                    </dl>
+                </div>
+
             </div>
 
-        </div>
-
-        <p id="ultimo-parrafo">Ambas Consolas cuentan con el mismo acceso a cientos de juegos por una suscripción
-            mensual del Xbox Game
-            Pass
-            y con su retrocompatibilidad.
-            <br>
-            Todo depende de ti
-        </p>
-    </section>
+            <p class="parrafoX">Ambas Consolas cuentan con el mismo acceso a cientos de juegos por una
+                suscripción
+                mensual del Xbox Game
+                Pass
+                y con su retrocompatibilidad.
+                <br>
+                Todo depende de ti
+            </p>
+    </article>
 
     <footer>
-        <div>
-            <div>
-                <dl>
-                    <dt>Juegos</dt>
-                    <dd>Juego 1</dd>
-                    <dd>Juego 2</dd>
-                    <dd>Juego 3</dd>
-                </dl>
+        <div class="footer_cont">
+            <div class="footer_item_cont">
+                <ul class="lista">
+                    <li>
+                        <p class="footer_title">Juegos</p>
+                    </li>
+                    <li><a href="./VGTASA.html">Grand Theft Auto: San Andreas</a></li>
+                    <li><a href="./VGTA5.html">Grand Theft Auto V</a></li>
+                    <li><a href="./VKirby.html">Kirby's Return to Dream Land</a></li>
+                </ul>
             </div>
-            <div>
-                <dl>
-                    <dt>Juegos</dt>
-                    <dd>Consola 1</dd>
-                    <dd>Consola 2</dd>
-                    <dd>Consola 3</dd>
-                </dl>
+            <div class="footer_item_cont">
+                <ul class="lista">
+                    <li>
+                        <p class="footer_title">Consolas</p>
+                    </li>
+                    <li><a href="./cPlayStation.html">PlayStation 5</a></li>
+                    <li><a href="./cXbox.html">Xbox S vs X</a></li>
+                    <li><a href="./cNintendo.html">Nintendo Oled vs Lite</a></li>
+                </ul>
             </div>
-            <div>
-                <dl>
-                    <dt>Trucos</dt>
-                    <dd>Truco 1</dd>
-                    <dd>Truco 2</dd>
-                    <dd>Truco 3</dd>
-                </dl>
+            <div class="footer_item_cont">
+                <ul class="lista">
+                    <li>
+                        <p class="footer_title">Enlaces Útiles</p>
+                    </li>
+                    <li><a href="./trucos.html">Trucos</a></li>
+                    <li><a id="contacto" href="./Paginas/contacto.html">Contacto</a></li>
+                </ul>
             </div>
-            <div>
-                <dl>
-                    <dt>Soporte tecnico</dt>
-                    <dd><a href="contacto.html">Contacto</a></dd>
-                </dl>
 
-            </div>
         </div>
-        <div>
+        <div class="footer_legal">
             <p>Todos los contenidos, títulos de juegos, nombres y/o imágenes comerciales, marcas comerciales, arte e
                 imágenes asociadas son marcas comerciales y/o material con derechos de autor de sus propietarios
                 respectivos.Todos los derechos reservados.</p>

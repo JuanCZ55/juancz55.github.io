@@ -7,76 +7,10 @@
     <title>Switch</title>
     <link rel="icon" type="image/png" href="../Imagenes/Logo.png">
     <link rel="stylesheet" href="../Style/HeaFoo.css">
+    <link rel="stylesheet" href="../Style/sNintendo.css">
     <script src="../Script/carrCNLite.js" defer></script>
     <script src="../Script/carrCNOled.js" defer></script>
-    <style>
-        .tituh1 {
-            text-align: center;
-            font-size: 280%;
-            
-        }
-
-        article {
-            margin: 0% 10%;
-            backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.11);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        #imginicio {
-            display: block;
-            margin: 0 auto;
-            width: 60%;
-            max-width: 80%;
-            height: auto;
-            min-width: 80%;
-            padding-bottom: 5%;
-
-        }
-
-        .parrafos {
-            text-align: justify;
-            max-width: 80%;
-            margin: auto;
-            font-size: 20px;
-        }
-
-        .subth2 {
-            align-items: self-start;
-        }
-
-        button {
-            width: 100%;
-            height: auto;
-            background: none;
-            border: none;
-
-        }
-
-        .imgcarrusel {
-            width: 22%;
-            height: 150px;
-            object-fit: scale-down;
-            transition: opacity 2s ease;
-            opacity: 1;
-        }
-
-        .imgcarrusel:hover {
-            opacity: 0.5;
-        }
-
-
-        #carruselOLED,
-        #carruselLite {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            max-width: 100%;
-        }
-        
-    </style>
+  
 </head>
 
 <body>
@@ -89,7 +23,7 @@
             </div>
             <div class="header-nav">
                 <div class="header-nav-menu">
-                    <button class="header-nav-menu-button">VideoJuegos</button>
+                    <button class="header-nav-menu-button" class="header-nav-menu-button">VideoJuegos</button>
                     <div class="header-nav-menu-item">
                         <a href="../Paginas/VGTA5.html">Grand Theft Auto V</a>
                         <a href="../Paginas/VGTASA.html">Grand Theft Auto: San Andreas</a>
@@ -125,43 +59,43 @@
             informada sobre cuál es la mejor opción para tus necesidades de juego.
         </p>
         <h2 class="subth2">Diseño y Pantalla</h2>
-       
+
         <div id="carruselLite">
-            <button id="izL"><img src="../Iconos/Izquierda.png" alt="atras"></button>
+            <button class="botonesC" id="izL"><img src="../Iconos/Izquierda.png" alt="atras"></button>
             <img src="../Imagenes/Nintendo/Lite/Imagen (1).png" alt="3" id="imc3L" class="imgcarrusel">
             <img src="../Imagenes/Nintendo/Lite/Imagen (2).png" alt="4" id="imc4L" class="imgcarrusel">
             <img src="../Imagenes/Nintendo/Lite/Imagen (3).png" alt="5" id="imc5L" class="imgcarrusel">
-            <button id="deL" ;><img src="../Iconos/Derecha.png" alt="adelante"></button>
+            <button class="botonesC" id="deL" ;><img src="../Iconos/Derecha.png" alt="adelante"></button>
         </div>
         <br>
- <p class="parrafos">
-        La Nintendo Switch Lite está diseñada para ser tu compañera de juegos en movimiento. Con un peso ligero y un
-        tamaño compacto, es fácil de llevar a cualquier lugar. Su pantalla de 5.5 pulgadas, con una resolución de
-        1280 x 720 píxeles, proporciona imágenes nítidas y colores vivos, ideales para disfrutar de tus juegos
-        favoritos. Está disponible en una variedad de colores vibrantes, lo que permite a los jugadores elegir un
-        modelo que refleje su estilo personal. Sin embargo, su diseño portátil implica que no puede conectarse a un
-        televisor, lo que la limita a una experiencia de juego exclusivamente en modo portátil.
+        <p class="parrafos">
+            La Nintendo Switch Lite está diseñada para ser tu compañera de juegos en movimiento. Con un peso ligero y un
+            tamaño compacto, es fácil de llevar a cualquier lugar. Su pantalla de 5.5 pulgadas, con una resolución de
+            1280 x 720 píxeles, proporciona imágenes nítidas y colores vivos, ideales para disfrutar de tus juegos
+            favoritos. Está disponible en una variedad de colores vibrantes, lo que permite a los jugadores elegir un
+            modelo que refleje su estilo personal. Sin embargo, su diseño portátil implica que no puede conectarse a un
+            televisor, lo que la limita a una experiencia de juego exclusivamente en modo portátil.
         </p>
 
         <br><br>
 
         <div id="carruselOLED">
-            <button id="iz1O"><img src="../Iconos/Izquierda.png" alt="atras"></button>
+            <button class="botonesC" id="iz1O"><img src="../Iconos/Izquierda.png" alt="atras"></button>
             <img src="../Imagenes/Nintendo/Amoled/Imagen (1).png" alt="3" id="imc0O" class="imgcarrusel">
             <img src="../Imagenes/Nintendo/Amoled/Imagen (2).png" alt="4" id="imc1O" class="imgcarrusel">
             <img src="../Imagenes/Nintendo/Amoled/Imagen (3).png" alt="5" id="imc2O" class="imgcarrusel">
-            <button id="de1O" ;><img src="../Iconos/Derecha.png" alt="adelante"></button>
+            <button class="botonesC" id="de1O" ;><img src="../Iconos/Derecha.png" alt="adelante"></button>
         </div>
         <br>
         <p class="parrafos">
 
-        Mientras que la Nintendo Switch OLED se eleva al siguiente nivel con su impresionante pantalla de 7
-        pulgadas, que utiliza tecnología OLED para ofrecer colores más profundos y un contraste notable. Esta
-        pantalla más grande no solo mejora la experiencia visual, sino que también permite una mejor visualización
-        en grupo, perfecta para jugar con amigos o familiares. El diseño es elegante y moderno, con un soporte
-        ajustable más robusto, lo que brinda una mayor estabilidad y versatilidad al jugar en diferentes posiciones.
-        Además, el dock de la OLED incluye un puerto LAN, asegurando conexiones a internet más rápidas y estables
-        para los juegos en línea.
+            Mientras que la Nintendo Switch OLED se eleva al siguiente nivel con su impresionante pantalla de 7
+            pulgadas, que utiliza tecnología OLED para ofrecer colores más profundos y un contraste notable. Esta
+            pantalla más grande no solo mejora la experiencia visual, sino que también permite una mejor visualización
+            en grupo, perfecta para jugar con amigos o familiares. El diseño es elegante y moderno, con un soporte
+            ajustable más robusto, lo que brinda una mayor estabilidad y versatilidad al jugar en diferentes posiciones.
+            Además, el dock de la OLED incluye un puerto LAN, asegurando conexiones a internet más rápidas y estables
+            para los juegos en línea.
         </p>
         <h2 class="subth2">Rendimiento y Batería</h2>
         <p class="parrafos">¿Buscas una consola para tus aventuras portátiles? La Nintendo Switch Lite es tu compañera
@@ -211,45 +145,46 @@
             modo portátil. Además, el mayor almacenamiento interno te permite guardar más juegos y actualizaciones sin
             preocuparte por el espacio.
             <br>
-            Y si aun no te decidis lo mejor es ir a la tienda mas cercana y te daras cuenta cual es para vos"
+            <br>
+            ¿Indeciso? lo mejor es ir a la tienda mas cercana y te daras cuenta cual es la indicada
         </p>
 
 
     </article>
     <footer>
-        <div>
-            <div>
-                <p>Juegos</p>
-                <ul>
-                    <li>Juego 1</li>
-                    <li>Juego 2</li>
-                    <li>Juego 3</li>
+        <div class="footer_cont">
+            <div class="footer_item_cont">
+                <ul class="lista">
+                    <li>
+                        <p class="footer_title">Juegos</p>
+                    </li>
+                    <li><a href="./VGTASA.html">Grand Theft Auto: San Andreas</a></li>
+                    <li><a href="./VGTA5.html">Grand Theft Auto V</a></li>
+                    <li><a href="./VKirby.html">Kirby's Return to Dream Land</a></li>
                 </ul>
             </div>
-            <div>
-                <p>Juegos</p>
-                <ul>
-                    <li>Consola 1</li>
-                    <li>Consola 2</li>
-                    <li>Consola 3</li>
+            <div class="footer_item_cont">
+                <ul class="lista">
+                    <li>
+                        <p class="footer_title">Consolas</p>
+                    </li>
+                    <li><a href="./cPlayStation.html">PlayStation 5</a></li>
+                    <li><a href="./cXbox.html">Xbox S vs X</a></li>
+                    <li><a href="./cNintendo.html">Nintendo Oled vs Lite</a></li>
                 </ul>
             </div>
-            <div>
-                <p>Trucos</p>
-                <ul>
-                    <li>Truco 1</li>
-                    <li>Truco 2</li>
-                    <li>Truco 3</li>
+            <div class="footer_item_cont">
+                <ul class="lista">
+                    <li>
+                        <p class="footer_title">Enlaces Útiles</p>
+                    </li>
+                    <li><a href="./trucos.html">Trucos</a></li>
+                    <li><a id="contacto" href="./Paginas/contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <div>
-                <p>Soporte tecnico</p>
-                <ul>
-                    <li><a href="./Paginas/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+
         </div>
-        <div>
+        <div class="footer_legal">
             <p>Todos los contenidos, títulos de juegos, nombres y/o imágenes comerciales, marcas comerciales, arte e
                 imágenes asociadas son marcas comerciales y/o material con derechos de autor de sus propietarios
                 respectivos.Todos los derechos reservados.</p>
