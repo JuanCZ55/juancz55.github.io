@@ -4,11 +4,11 @@
             imagenes.push("../Imagenes/GTA5/Imagen (" + i + ").jpg");
         }
 
-        const imgOne = document.getElementById("im1");
-        const imgTwo = document.getElementById("im2");
-        const imgTree = document.getElementById("im3");
-        const botonDe = document.getElementById("de");
-        const botonIz = document.getElementById("iz");
+        const imgOne = document.getElementById("gtaV-imagen-1");
+        const imgTwo = document.getElementById("gtaV-imagen-2");
+        const imgTree = document.getElementById("gtaV-imagen-3");
+        const botonDe = document.getElementById("gtaV-button-derecho");
+        const botonIz = document.getElementById("gtaV-button-izquierdo");
 
         var contI = 0;
         var contIm = 1;

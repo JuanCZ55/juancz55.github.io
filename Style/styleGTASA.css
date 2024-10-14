@@ -1,0 +1,115 @@
+
+/*articulo 1*/
+.gta-sa-article-introduccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    background-image: url("../Imagenes/GTASA/Imagen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.gta-sa-div-container-introduccion{
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gta-sa-h1-title-principal{
+    text-align: center;
+    font-size: 300%;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 20px 0;
+}
+.gta-sa-img-principal{
+    height: 30%;
+    width: 80%;
+}
+
+/*articulo 2*/
+.gta-sa-article-informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(10, 9, 9, 0.301);
+    width: 80%;
+
+}
+.gta-sa-h2-title-introduccion{
+    color: #FFFFFF;
+    font-size: 200%;
+
+    margin: 0;
+    padding: 5% 10%;
+}
+.gta-sa-p-introduccion{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 10% 5% 10%;
+    font-size: 110%;
+    white-space: pre-line;
+}
+#gta-sa-p-introduccion{
+    padding: 10%;
+}
+.gta-sa-img-intruduccion{
+    height: auto;
+    width: 80%;
+}
+.gta-sa-carrusel{
+    height: 50%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3% 0;
+    border-radius: 20px;
+    background-color: #303238da;
+}
+.gta-sa-button-izquierdo, .gta-sa-button-derecho{
+    background-color: transparent;
+    border: none;
+    width: 10%;
+    height: auto;
+    object-fit: scale-down;
+}
+.gta-sa-button-imagen{
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.gta-sa-button-izquierdo:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+}
+.gta-sa-button-derecho:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+}
+.gta-sa-cont-img-carrusel{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    
+}
+.gta-sa-img-carrusel{
+    width: 32%;
+    height: auto;
+    object-fit: scale-down;
+}

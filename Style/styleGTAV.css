@@ -1,0 +1,112 @@
+
+/*articulo 1*/
+.gtaV-article-introduccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    background-image: url("../Imagenes/GTA5/Fondo-principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.gtaV-div-container-introduccion{
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gtaV-h1-title-principal{
+    text-align: center;
+    font-size: 300%;
+    color: #030202;
+    margin: 0;
+    padding: 20px 0;
+}
+.gtaV-img-principal{
+    height: 30%;
+    width: 80%;
+}
+
+/*articulo 2*/
+.gtaV-article-informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(10, 9, 9, 0.301);
+    width: 80%;
+
+}
+.gtaV-h2-title-introduccion{
+    color: #FFFFFF;
+    font-size: 200%;
+
+    margin: 0;
+    padding: 5% 10%;
+}
+.gtaV-p-introduccion{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 10% 5% 10%;
+    font-size: 110%;
+    white-space: pre-line;
+}
+.gtaV-img-intruduccion{
+    height: auto;
+    width: 80%;
+}
+.gtaV-carrusel{
+    height: 50%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3% 0;
+    border-radius: 20px;
+    background-color: #303238da;
+}
+.gtaV-button-izquierdo, .gtaV-button-derecho{
+    background-color: transparent;
+    border: none;
+    width: 10%;
+    height: auto;
+    object-fit: scale-down;
+}
+.gtaV-button-imagen{
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.gtaV-button-izquierdo:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+}
+.gtaV-button-derecho:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+}
+.gtaV-cont-img-carrusel{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    
+}
+.gtaV-img-carrusel{
+    width: 32%;
+    height: auto;
+    object-fit: scale-down;
+}

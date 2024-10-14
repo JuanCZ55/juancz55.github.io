@@ -1,0 +1,110 @@
+
+/*articulo 1*/
+.kirby-article-introduccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    background-image: url("../Imagenes/Kirby/Principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+.kirby-div-container-introduccion{
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kirby-h1-title-principal{
+    text-align: center;
+    font-size: 300%;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 20px 0;
+}
+.kirby-img-principal{
+    width: 100%;
+
+}
+
+
+/*articulo 2*/
+.kirby-article-informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.11);
+    width: 80%;
+
+}
+.kirby-h2-title-introduccion{
+    color: #FFFFFF;
+    font-size: 280%;
+
+    margin: 0;
+    padding: 5% 10%;
+}
+.kirby-p-introduccion{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 10% 5% 10%;
+    font-size: 110%;
+    white-space: pre-line;
+}
+.kirby-img-intruduccion{
+    width: 80%;
+}
+.kirby-carrusel{
+    height: 50%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3% 0;
+    border-radius: 20px;
+    background-color: #303238da;
+}
+.kirby-button-izquierdo, .kirby-button-derecho{
+    background-color: transparent;
+    border: none;
+    width: 10%;
+    height: auto;
+    object-fit: scale-down;
+}
+.kirby-button-imagen{
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.kirby-button-izquierdo:hover{
+    border-radius: 5px;
+    background-color: #303238da;
+}
+.kirby-button-derecho:hover{
+    border-radius: 5px;
+    background-color: #303238da;
+}
+.kirby-cont-img-carrusel{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    
+}
+.kirby-img-carrusel{
+    width: 32%;
+    height: auto;
+    object-fit: scale-down;
+}

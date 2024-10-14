@@ -1,57 +1,57 @@
         const imagenesB = [];
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 1; i <= 4; i++) {
             imagenesB.push("../Imagenes/Kirby/Imag (" + i + ").jpg");
         }
 
-        const imgOneB = document.getElementById("im1B");
-        const imgTwoB = document.getElementById("im2B");
-        const imgTreeB = document.getElementById("im3B");
-        const botonDeB = document.getElementById("deB");
-        const botonIzB = document.getElementById("izB");
+        const imgOneB = document.getElementById("kirby-imagen-1B");
+        const imgTwoB = document.getElementById("kirby-imagen-2B");
+        const imgTreeB = document.getElementById("kirby-imagen-3B");
+        const botonDeB = document.getElementById("kirby-button-derecha-B");
+        const botonIzB = document.getElementById("kirby-button-izquierdo-B");
 
-        let contIB = 0;
-        let contImB = 1;
-        let contImgB = 2;
+        let contImgIB = 0;
+        let contImgIIB = 1;
+        let contImgIIIB = 2;
 
         function cambiarImgB(){
-            imgOneB.src = imagenesB[contIB];
-            imgTwoB.src = imagenesB[contImB];
-            imgTreeB.src = imagenesB[contImgB];
+            imgOneB.src = imagenesB[contImgIB];
+            imgTwoB.src = imagenesB[contImgIIB];
+            imgTreeB.src = imagenesB[contImgIIIB];
         }
 
         botonDeB.addEventListener("click", ()=>{
-            if(contImgB == 0){
-                contImgB=3;
+            if(contImgIIIB == 0){
+                contImgIIIB=3;
             }else{
-                contImgB=contImgB-1;
+                contImgIIIB=contImgIIIB-1;
             }
-            if(contImB == 0){
-                contImB=3;
+            if(contImgIIB == 0){
+                contImgIIB=3;
             }else{
-                contImB--;
+                contImgIIB--;
             }
-            if(contIB == 0){
-                contIB=3;
+            if(contImgIB == 0){
+                contImgIB=3;
             }else{
-                contIB--;
+                contImgIB--;
             }
             cambiarImgB();
         })
         botonIzB.addEventListener("click", ()=>{
-            if(contImgB == 3){
-                contImgB=0;
+            if(contImgIIIB == 3){
+                contImgIIIB=0;
             }else{
-                contImgB++;
+                contImgIIIB++;
             }
-            if(contImB == 3){
-                contImB=0;
+            if(contImgIIB == 3){
+                contImgIIB=0;
             }else{
-                contImB++;
+                contImgIIB++;
             }
-            if(contIB == 3){
-                contIB=0;
+            if(contImgIB == 3){
+                contImgIB=0;
             }else{
-                contIB++;
+                contImgIB++;
             }
             cambiarImgB();
         })

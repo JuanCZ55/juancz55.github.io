@@ -4,11 +4,11 @@
             imagenes.push("../imagenes/GTASA/Imagen (" + i + ").jpg");
         }
 
-        const imgOne = document.getElementById("im1");
-        const imgTwo = document.getElementById("im2");
-        const imgTree = document.getElementById("im3");
-        const botonDe = document.getElementById("de");
-        const botonIz = document.getElementById("iz");
+        const imgOne = document.getElementById("gta-sa-imagen-1");
+        const imgTwo = document.getElementById("gta-sa-imagen-2");
+        const imgTree = document.getElementById("gta-sa-imagen-3");
+        const botonDe = document.getElementById("gta-sa-button-derecho");
+        const botonIz = document.getElementById("gta-sa-button-izquierdo");
 
         var contI = 0;
         var contIm = 1;

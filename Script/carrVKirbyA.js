@@ -3,55 +3,55 @@
             imagenes.push("../Imagenes/Kirby/Imagen (" + i + ").jpg");
         }
 
-        const imgOne = document.getElementById("im1A");
-        const imgTwo = document.getElementById("im2A");
-        const imgTree = document.getElementById("im3A");
-        const botonDe = document.getElementById("deA");
-        const botonIz = document.getElementById("izA");
+        const imgOne = document.getElementById("kirby-imagen-1A");
+        const imgTwo = document.getElementById("kirby-imagen-2A");
+        const imgTree = document.getElementById("kirby-imagen-3A");
+        const botonDe = document.getElementById("kirby-button-derecha-A");
+        const botonIz = document.getElementById("kirby-button-izquierdo-A");
 
-        var contI = 0;
-        var contIm = 1;
-        var contImg = 2;
+        var contImgIA = 0;
+        var contImgIIA = 1;
+        var contImgIIIA = 2;
 
         function cambiarImg(){
-            imgOne.src = imagenes[contI];
-            imgTwo.src = imagenes[contIm];
-            imgTree.src = imagenes[contImg];
+            imgOne.src = imagenes[contImgIA];
+            imgTwo.src = imagenes[contImgIIA];
+            imgTree.src = imagenes[contImgIIIA];
         }
 
         botonDe.addEventListener("click", ()=>{
-            if(contImg == 0){
-                contImg=3;
+            if(contImgIIIA == 0){
+                contImgIIIA=3;
             }else{
-                contImg=contImg-1;
+                contImgIIIA=contImgIIIA-1;
             }
-            if(contIm == 0){
-                contIm=3;
+            if(contImgIIA == 0){
+                contImgIIA=3;
             }else{
-                contIm--;
+                contImgIIA--;
             }
-            if(contI == 0){
-                contI=3;
+            if(contImgIA == 0){
+                contImgIA=3;
             }else{
-                contI--;
+                contImgIA--;
             }
             cambiarImg();
         })
         botonIz.addEventListener("click", ()=>{
-            if(contImg == 3){
-                contImg=0;
+            if(contImgIIIA == 3){
+                contImgIIIA=0;
             }else{
-                contImg++;
+                contImgIIIA++;
             }
-            if(contIm == 3){
-                contIm=0;
+            if(contImgIIA == 3){
+                contImgIIA=0;
             }else{
-                contIm++;
+                contImgIIA++;
             }
-            if(contI == 3){
-                contI=0;
+            if(contImgIA == 3){
+                contImgIA=0;
             }else{
-                contI++;
+                contImgIA++;
             }
             cambiarImg();
         })
