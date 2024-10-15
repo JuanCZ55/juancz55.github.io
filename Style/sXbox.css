@@ -16,10 +16,12 @@
 }
 
 #imagen-inicioX {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+    max-width: 80%;
+    height:auto;
+    margin: auto;
+    display: flex;
+    flex-direction: colum;
+    
 }
 
 .listaX {
@@ -36,13 +38,29 @@
     margin: 3% 0;
     padding: 0;
 }
+#primerArtX{
+    background-image: url(../Imagenes/Xbox/inicio2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%; 
+    overflow: hidden;
+}
+#contenX{
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+
+}
 
 #sectionX {
     margin: 0% 10%;
     backdrop-filter: blur(10px);
-    background-color: rgba(36, 34, 34, 0.184);
+    background-color: rgba(255, 255, 255, 0.11);
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tablasX {
@@ -60,10 +78,13 @@
 
 #carruselx,
 #carrusels {
+
+    max-width: 90%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    padding: 3% 0;
+    border-radius: 20px;
+    background-color: #303238da;
 }
 
 .contenedor {
@@ -121,11 +142,9 @@
 .botonesC img {
     max-width: 50%;
     height: auto;
-}
-.botonesC img {
     transition: transform 0.3s ease;
-}
 
+}
 .botonesC img:hover {
-    transform: scale(1.09); /* Aumenta ligeramente el tamaño al hacer hover */
+    transform: scale(1.09);
 }

@@ -1,11 +1,25 @@
-
 .tituh1 {
     text-align: center;
     font-size: 280%;
 
 }
 
-article {
+#cabeceraN {
+    background-image: url(../Imagenes/Nintendo/Incio.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#contCabeN {
+    backdrop-filter: blur(10px);
+
+    overflow: hidden;
+
+}
+
+#articuloN {
     margin: 0% 10%;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.11);
@@ -14,13 +28,12 @@ article {
 }
 
 #imginicio {
-    display: block;
-    margin: 0 auto;
-    width: 60%;
     max-width: 80%;
     height: auto;
-    min-width: 80%;
-    padding-bottom: 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: colum;
+
 
 }
 
@@ -33,34 +46,36 @@ article {
 
 .subth2 {
     font-size: 210%;
-    align-items: self-start;
-    padding: 19px 9%;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid white;
+    text-align: center;
+    color: #D1D5DB;
+
 }
 
 .botonesC {
     background: none;
     border: none;
-    
+
 }
-.botonesC img{
-    width: 50%;
+
+.botonesC img {
+    max-width: 50%;
     height: auto;
+    transition: transform 0.3s ease;
+
+}
+
+.botonesC img:hover {
+    transform: scale(1.09);
 }
 
 .imgcarrusel {
     width: 22%;
     height: 150px;
     object-fit: scale-down;
-    transition: opacity 2s ease;
-    opacity: 1;
+
 }
 
-.imgcarrusel:hover {
-    opacity: 0.5;
-}
+
 
 
 #carruselOLED,
