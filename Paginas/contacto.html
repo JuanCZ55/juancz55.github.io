@@ -6,33 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="icon" type="image/png" href="../Imagenes/Logo.png">
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/HeaFoo.css">
     <script src="../Script/Contacto.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <div class="logo">
-                <h1>
-                    <a href="../index.html">KARPENT</a>
+            <div class="header-logo">
+                <h1 class="header-titular">
+                    <a class="titulo" href="../index.html">KARPENT</a>
                 </h1>
             </div>
-
-            <div class="navegador">
-                <ul>
-                    <li>
-                        <a href="../Paginas/juegos.html">Videojuegos</a>
-                    </li>
-                    <li class="liCentro">
-                        <a href="../Paginas/consolas.html">Consolas</a>
-                    </li>
-                    <li>
-                        <a href="../Paginas/trucos.html">Trucos</a>
-                    </li>
-                </ul>
+            <br><br>
+            <div class="header-nav">
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button" class="header-nav-menu-button">VideoJuegos</button>
+                    <div class="header-nav-menu-item">
+                        <a href="../Paginas/VGTA5.html">Grand Theft Auto V</a>
+                        <a href="../Paginas/VGTASA.html">Grand Theft Auto: San Andreas</a>
+                        <a href="../Paginas/VKirby.html">Kirby's Return to Dream Land Deluxe</a>
+                    </div>
+                </div>
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button">Consolas</button>
+                    <div class="header-nav-menu-item">
+                        <a href="../Paginas/cPlayStation.html">PlayStation</a>
+                        <a href="../Paginas/cXbox.html">Xbox</a>
+                        <a id="header-nav-menu-item" href="../Paginas/cNintendo.html">Nintendo</a>
+                    </div>
+                </div>
+                <div class="header-nav-menu" id="header-nav-menu-truco">
+                    <a id="header-nav-pag-truco" href="../Paginas/trucos.html">Truco</a>
+                </div>
             </div>
-        </nav>
     </header>
     <!--Cuerpo-->
 
@@ -62,7 +69,6 @@
     </section>
     <br><br>
     <!--Pie de cabecera-->
-    
     <footer>
         <div class="footer_cont">
             <div class="footer_item_cont">
@@ -91,7 +97,7 @@
                         <p class="footer_title">Enlaces Útiles</p>
                     </li>
                     <li><a href="./trucos.html">Trucos</a></li>
-                    <li><a id="contacto" href="./Paginas/contacto.html">Contacto</a></li>
+                    <li><a id="contacto" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
 
@@ -102,6 +108,7 @@
                 respectivos.Todos los derechos reservados.</p>
         </div>
     </footer>
+
 
 </body>
 

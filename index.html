@@ -7,108 +7,77 @@
     <title>KARPENT</title>
     <link rel="icon" type="image/png" href="Imagenes/Logo.png">
     <link rel="stylesheet" href="Style/HeaFoo.css">
-    <style>
-        .dropdown {
-            display: inline-block;
-            position: relative;
 
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            width: 100%;
-            overflow: auto;
-            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-            width: 130%;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            display: block;
-            color: #000000;
-            padding: 5px;
-            text-decoration: none;
-         
-        }
-
-        .dropdown-content a:hover {
-            color: #FFFFFF;
-            background-color: #00A4BD;
-        }
-    </style>
 </head>
 
 
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <div class="logo">
-                <h1>
-                    <a href="index.html">KARPENT</a>
+            <div class="header-logo">
+                <h1 class="header-titular">
+                    <a class="titulo" href="../index.html">KARPENT</a>
                 </h1>
             </div>
-            <div class="navegador">
-                <div class="dropdown">
-                    <button class="dropbtn">VideoJuegos</button>
-                    <div class="dropdown-content">
-                        <a href="Paginas/VGTA5.html">Grand Theft Auto V</a>
-                        <a href="Paginas/VGTASA.html">Grand Theft Auto: San Andreas</a>
-                        <a href="Paginas/VKirby.html">Kirby's Return to Dream Land Deluxe</a>
+            <br><br>
+            <div class="header-nav">
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button">VideoJuegos</button>
+                    <div class="header-nav-menu-item">
+                        <a href="./Paginas/VGTA5.html">Grand Theft Auto V</a>
+                        <a href="./Paginas/VGTASA.html">Grand Theft Auto: San Andreas</a>
+                        <a href="./Paginas/VKirby.html">Kirby's Return to Dream Land Deluxe</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Consolas</button>
-                    <div class="dropdown-content">
-                        <a href="Paginas/cPlayStation.html">PlayStation</a>
-                        <a href="Paginas/cXbox.html">Xbox</a>
-                        <a href="Paginas/cNintendo.html">Nintendo</a>
+                <div class="header-nav-menu">
+                    <button class="header-nav-menu-button">Consolas</button>
+                    <div class="header-nav-menu-item">
+                        <a href="./Paginas/cPlayStation.html">PlayStation</a>
+                        <a href="./Paginas/cXbox.html">Xbox</a>
+                        <a id="header-nav-menu-item" href="./Paginas/cNintendo.html">Nintendo</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <a href="Paginas/trucos.html">Truco</a>
+                <div class="header-nav-menu" id="header-nav-menu-truco">
+                    <a id="header-nav-pag-truco" href="Paginas/trucos.html">Truco</a>
                 </div>
             </div>
     </header>
     <!--Cuerpo de la pagina-->
     <section>
         <article class="ColumInfo">
-            <div>
-                <a href="">
-                    <h3>Titulo de div mas imgaen</h3>
+            <div class="Contenedores-art-index">
+                <a href="" class="link-art-index">
+                    <h3 class="titulo-articulos-index">Grand Thef Auto V</h3>
                     <img src="" alt="">
                 </a>
             </div>
-            <div>
-                <a href="">
-                    <h3>Titulo de div mas imgaen</h3>
+            <div class="Contenedores-art-index">
+                <a href="" class="link-art-index">
+                    <h3 class="titulo-articulos-index">Switch OLED vs Switch Lite</h3>
                     <img src="" alt="">
                 </a>
             </div>
-            <div>
-                <a href="">
-                    <h3>Titulo de div mas imgaen</h3>
+            <div class="Contenedores-art-index">
+                <a href="" class="link-art-index">
+                    <h3 class="titulo-articulos-index">Kirby's Return to Dreamland Deluxe</h3>
                     <img src="" alt="">
                 </a>
             </div>
-            <div>
-                <a href="">
-                    <h3>Titulo de div mas imgaen</h3>
+            <div class="Contenedores-art-index">
+                <a href="" class="link-art-index">
+                    <h3 class="titulo-articulos-index">Xbox Series X vs Xbox Series S/h3>
+                        <img src="" alt="">
+                </a>
+            </div>
+            <div class="Contenedores-art-index">
+                <a href="" class="link-art-index">
+                    <h3 class="titulo-articulos-index">Análisis de la PlayStation 5</h3>
                     <img src="" alt="">
                 </a>
             </div>
-            <div>
-                <a href="">
-                    <h3>Titulo de div mas imgaen</h3>
-                    <img src="" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <h3>Titulo de div mas imgaen</h3>
+            <div class="Contenedores-art-index">
+                <a href="" class="link-art-index">
+                    <h3 class="titulo-articulos-index">Grand Thef Auto:San Andras</h3>
                     <img src="" alt="">
                 </a>
             </div>
@@ -134,7 +103,7 @@
         </article>
     </section>
     <!--Pie de la pagina-->
-    
+    <br><br><br>
     <footer>
         <div class="footer_cont">
             <div class="footer_item_cont">
@@ -142,9 +111,9 @@
                     <li>
                         <p class="footer_title">Juegos</p>
                     </li>
-                    <li><a href="./VGTASA.html">Grand Theft Auto: San Andreas</a></li>
-                    <li><a href="./VGTA5.html">Grand Theft Auto V</a></li>
-                    <li><a href="./VKirby.html">Kirby's Return to Dream Land</a></li>
+                    <li><a href="Paginas/VGTASA.html">Grand Theft Auto: San Andreas</a></li>
+                    <li><a href="./Paginas/VGTA5.html">Grand Theft Auto V</a></li>
+                    <li><a href="./Paginas/VKirby.html">Kirby's Return to Dream Land</a></li>
                 </ul>
             </div>
             <div class="footer_item_cont">
@@ -152,9 +121,9 @@
                     <li>
                         <p class="footer_title">Consolas</p>
                     </li>
-                    <li><a href="./cPlayStation.html">PlayStation 5</a></li>
-                    <li><a href="./cXbox.html">Xbox S vs X</a></li>
-                    <li><a href="./cNintendo.html">Nintendo Oled vs Lite</a></li>
+                    <li><a href="./Paginas/cPlayStation.html">PlayStation 5</a></li>
+                    <li><a href="./Paginas/cXbox.html">Xbox S vs X</a></li>
+                    <li><a href="./Paginas/cNintendo.html">Nintendo Oled vs Lite</a></li>
                 </ul>
             </div>
             <div class="footer_item_cont">
@@ -162,7 +131,7 @@
                     <li>
                         <p class="footer_title">Enlaces Útiles</p>
                     </li>
-                    <li><a href="./trucos.html">Trucos</a></li>
+                    <li><a href="./Paginas/trucos.html">Trucos</a></li>
                     <li><a id="contacto" href="./Paginas/contacto.html">Contacto</a></li>
                 </ul>
             </div>
