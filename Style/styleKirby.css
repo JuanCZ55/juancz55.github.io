@@ -76,25 +76,24 @@
     background-color: #303238da;
 }
 .kirby-button-izquierdo, .kirby-button-derecho{
-    background-color: transparent;
+    background: none;
     border: none;
     width: 10%;
     height: auto;
     object-fit: scale-down;
 }
 .kirby-button-imagen{
-    width: 100%;
+    max-width: 50%;
     height: auto;
-    object-fit: scale-down;
+    transition: transform 0.3s ease;
 }
 .kirby-button-izquierdo:hover{
-    border-radius: 5px;
-    background-color: #303238da;
+    transform: scale(1.88);
 }
 .kirby-button-derecho:hover{
-    border-radius: 5px;
-    background-color: #303238da;
+    transform: scale(1.88);
 }
+
 .kirby-cont-img-carrusel{
     display: flex;
     justify-content: space-evenly;
@@ -105,6 +104,8 @@
     width: 32%;
     height: auto;
     object-fit: scale-down;
+
+    
 }
 
 /*------------------------------------------------------------------*/

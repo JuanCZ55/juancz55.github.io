@@ -1,0 +1,64 @@
+.Trucos-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.11);
+}
+.Trucos-gtaV-h2-presentacion{
+    margin: 5% 0;
+    font-size: 30px;
+}
+.Trucos-img-presentacion{
+    height: auto;
+    width: 80%;
+    margin-bottom: 2%;
+}
+.Trucos-parrafo-presentacion{
+    font-size: 18px;
+    width: 80%;
+}
+.Trucos-h2-informativo{
+    text-align: start;
+    width: 80%;
+}
+/*---------------------------------------------------------*/
+.Trucos-table{
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 3%;
+}
+.Trucos-table-th{
+    border-bottom: 1px solid #ccc;
+    padding: 1%;
+    text-align: start;
+    width: 33%;
+
+}.Trucos-table-td{
+    border-bottom: 1px solid #ccc;
+    padding: 1%;
+}
+.Trucos-table-td-ultimo{
+    border-bottom: none;
+    padding: 1%;
+}
+/*-
+.Trucos-gtaV-table-th{
+    background-color: white;
+    color: black;
+
+    padding-left: 1%;
+    text-align: left;
+}
+.Trucos-gtaV-table-td{
+    background-color: white;
+    color: black;
+
+    padding-left: 1%;
+    height: 50px;
+}
+*/
