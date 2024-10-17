@@ -11,7 +11,8 @@
 }
 .Trucos-gtaV-h2-presentacion{
     margin: 5% 0;
-    font-size: 30px;
+    font-size: 300%;
+    color: #FFFFFF;
 }
 .Trucos-img-presentacion{
     height: auto;
@@ -21,6 +22,7 @@
 .Trucos-parrafo-presentacion{
     font-size: 18px;
     width: 80%;
+    color: #FFFFFF;
 }
 .Trucos-h2-informativo{
     text-align: start;

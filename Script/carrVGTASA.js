@@ -1,7 +1,7 @@
 
         const imagenes = [];
         for (let i = 1; i <= 4; i++) {
-            imagenes.push("../imagenes/GTASA/Imagen (" + i + ").jpg");
+            imagenes.push("../Imagenes/GTASA/Imagen (" + i + ").jpg");
         }
 
         const imgOne = document.getElementById("gta-sa-imagen-1");
