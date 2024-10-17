@@ -2,7 +2,7 @@ function validarForm() {
     const tNom = /^[a-zA-ZñÑ.'\s]+$/;
     let tmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const tTel = /^\+?\d{8,13}$/;
-    const tMsj = /^[\s\S]{10,300}$/;
+    const tMsj = /^[\s\S]{10,400}$/;
 
 
     const nombre = document.getElementById("nombre");
@@ -32,7 +32,8 @@ function validarForm() {
         re = false;
     }
     if (re) {
-        crearMensaje("felicidades negro")
+        let sms = `Nombre: ${nombre.value}<br> Correo Electronico: ${mail.value}<br>Telefono: ${tel.value} <br>  <br>Mensaje: ${msj.value}`
+        crearMensaje(sms)
         nombre.value = " "
         mail.value = " "
         tel.value = " "
@@ -63,27 +64,12 @@ function limpiar(event) {
 
 
 function crearMensaje(texto) {
-    const mensaje = document.createElement("div");
+    const mensaje = document.createElement("p");
     mensaje.innerHTML = texto;
-
-    // Aplicar estilos
-    mensaje.style.position = "fixed";
-    mensaje.style.top = "50%";
-    mensaje.style.left = "50%";
-    mensaje.style.transform = "translate(-50%, -50%)"; // Centrar el mensaje
-    mensaje.style.backgroundColor = "#4CAF50"; // Verde
-    mensaje.style.color = "white";
-    mensaje.style.padding = "10px";
-    mensaje.style.borderRadius = "5px";
-    mensaje.style.zIndex = "1000";
-    mensaje.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.2)";
-    mensaje.style.textAlign = "center"; // Centrar el texto
-
-    // Añadir el mensaje al cuerpo del documento
+    mensaje.id = "mensajeFlotante"
     document.body.appendChild(mensaje);
 
-    // Ocultar mensaje después de 3 segundos
     setTimeout(() => {
         mensaje.remove();
-    }, 3000);
+    }, 4000);
 }

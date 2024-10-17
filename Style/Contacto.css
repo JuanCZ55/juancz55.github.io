@@ -1,0 +1,83 @@
+body {
+    background-position: 0%;
+}
+
+#sectionformulario {
+    margin: 0% 20%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.11);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    font-size: 20px;
+}
+
+#formContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5%;
+}
+
+#tituloContacto {
+    font-size: 40px;
+}
+
+.inputForm {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid;
+    transform: color 29s ease;
+}
+
+.inputForm:focus {
+    border-color: #1abc9c;
+
+}
+
+
+#mensaje {
+    border-radius: 5px;
+    border: 2px solid;
+    resize: none;
+    height: 100px;
+}
+
+#mensaje:focus {
+    border-color: #1abc9c;
+
+}
+
+#btnForm {
+    margin: auto;
+    padding: 5px;
+    width: 120px;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 550;
+    background-color: #db0214;
+    transition: background-color 0.3s ease;
+
+
+}
+
+#btnForm:hover {
+    background-color: #292b37;
+    color: #1abc9c;
+}
+
+#mensajeFlotante {  
+    position: fixed;
+    top: 20%;
+    background-image: url(../Fondos/degradado.jpg);
+    color: white;
+    padding: 25px;
+    border-radius: 5px;
+    z-index: 1;
+    text-align: left;
+    margin: auto;
+    width: 35%;
+}

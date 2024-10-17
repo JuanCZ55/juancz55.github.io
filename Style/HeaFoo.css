@@ -14,8 +14,7 @@ body {
     background-size: cover;
     width: 100%;
 
-    margin: 0;
-    padding: 0;
+    margin: auto;
 }
 
 /*Cabecera*/
@@ -26,7 +25,7 @@ body {
     background-image: url("../Fondos/header.png");
     background-size: cover;
     width: 100%;
-    padding: 7% 0;
+    padding: 3% 0;
 }
 
 /*class Logo*/
@@ -46,7 +45,7 @@ a.titulo {
 }
 
 a.titulo:hover {
-    color: rgb(255, 0, 0);
+    color:#1abc9c;
 }
 
 /*class navegador*/
@@ -96,7 +95,7 @@ nav {
 }
 
 .header-nav-menu-item a:hover {
-    background-color: rgb(163, 17, 17);
+    background-color: #1abc9c;
 }
 
 /*Boton*/
@@ -111,7 +110,7 @@ nav {
 
 .header-nav-menu-button:hover {
     background-color: rgb(46, 44, 44);
-    color: rgb(255, 0, 0);
+    color: #1abc9c;
 }
 
 #header-nav-menu-truco {
@@ -128,7 +127,7 @@ nav {
 }
 
 #header-nav-pag-truco:hover {
-    color: rgb(255, 0, 0);
+    color: #1abc9c;
     background-color: rgb(46, 44, 44);
 }
 
@@ -136,11 +135,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*Centra todos los elementos que contenga*/
     background-color: rgba(5, 5, 5, 0.514);
-    /*Color del contorno del header*/
     width: 100%;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 
 }
 
@@ -148,7 +145,6 @@ footer {
 footer div {
     display: flex;
     justify-content: center;
-    /*Centra todos los elementos que contenga*/
     padding: auto;
     flex-wrap: wrap;
 }

@@ -7,6 +7,7 @@
     <title>Contacto</title>
     <link rel="icon" type="image/png" href="../Imagenes/Logo.png">
     <link rel="stylesheet" href="../Style/HeaFoo.css">
+    <link rel="stylesheet" href="../Style/Contacto.css">
     <script src="../Script/Contacto.js"></script>
 </head>
 
@@ -42,32 +43,34 @@
             </div>
     </header>
     <!--Cuerpo-->
-
-    <section>
+    <br>
+    <section id="sectionformulario">
         <form id="formContacto" action="javascript:void(0);" method="post" onsubmit="return validarForm()" novalidate>
-            <h2>Contacto</h2>
+            <h2 id="tituloContacto">Contacto</h2>
             <label for="nombre">Nombre y apellido:</label>
-            <input type="text" id="nombre" name="nombre" onfocus="limpiar(event)" required>
+            <input class="inputForm" type="text" id="nombre" name="nombre" onfocus="limpiar(event)" required>
             <p id="errorNombre" style="visibility: hidden;">Nombre Invalido, solo se tolera letras</p>
 
             <label for="email">Correo Electronico:</label>
-            <input type="text" id="email" name="email" onfocus="limpiar(event)" required>
+            <input class="inputForm" type="text" id="email" name="email" onfocus="limpiar(event)" required>
             <p id="errorEmail" style="visibility: hidden;">Email Invalido debe tener esta forma user@mail.com</p>
 
 
             <label for="telefono">Telefono:</label>
-            <input type="text" id="telefono" name="telefono" onfocus="limpiar(event)" required>
+            <input class="inputForm" type="text" id="telefono" name="telefono" onfocus="limpiar(event)" required>
             <p id="errorTel" style="visibility: hidden;">Telefono Invalido, solo se tolera numeros</p>
 
-            
+
             <label for="mensaje">Mensaje: </label>
-                <textarea type="text" id="mensaje" name="mensaje" onfocus="limpiar(event)" required></textarea>
+            <textarea class="inputForm" type="text" id="mensaje" name="mensaje" onfocus="limpiar(event)" required></textarea>
             <p id="errorMensaje" style="visibility: hidden;">Ingrese una cantidad de 10 a 300 caracteres</p>
 
-            <input type="submit"  value="Enviar">
+            <input type="submit" value="Enviar" id="btnForm" >
+            <button onclick="crearMensaje(`Nombre:jorge <br> Correo Electronico: asd@asd.com<br>Telefono: 123123123 <br>  <br>Mensaje: Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione iure, totam minus vero sapiente dolore quidem quas eveniet recusandae, non beatae ea. Dolorem praesentium soluta corporis. Quaerat, nam esse?
+Dolor a eos nisi recusandae cum voluptas quo impedit alias. Ex cupiditate repellat, nostrum expedita vitae libero deleniti corporis eaque velit rerum earum molestias, debitis tempore dolorem veritatis quibusdam ipsam!`)"></button>
         </form>
     </section>
-    <br><br>
+    <br>
     <!--Pie de cabecera-->
     <footer>
         <div class="footer_cont">
@@ -100,7 +103,9 @@
                     <li><a id="contacto" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-
+            <div class="header-nav-menu" id="header-nav-menu-truco">
+                <a id="header-nav-pag-truco" href="./contacto.html">Contacto</a>
+            </div>
         </div>
         <div class="footer_legal">
             <p>Todos los contenidos, títulos de juegos, nombres y/o imágenes comerciales, marcas comerciales, arte e
