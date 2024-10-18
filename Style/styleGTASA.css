@@ -113,3 +113,22 @@
     height: auto;
     object-fit: scale-down;
 }
+
+/*----------------------------------------------*/
+.gta-sa-enlace-mods{
+    font-size: 25px;    
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: start;
+    width: 80%;
+}
+.gta-sa-enlace-mods:hover{
+    color: #1abc9c;
+}
+.gta-sa-p-mods{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 10% 5% 10%;
+    font-size: 110%;
+    white-space: pre-line;
+}
