@@ -8,7 +8,7 @@
 
     width: 100%;
 
-    background-image: url("../Imagenes/GTASA/Imagen.jpg");
+    background-image: url("../Imagenes/GTASA/Fondo.jpeg");
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
@@ -26,13 +26,12 @@
 .gta-sa-h1-title-principal{
     text-align: center;
     font-size: 300%;
-    color: #FFFFFF;
+    color: #020202;
     margin: 0;
     padding: 20px 0;
 }
 .gta-sa-img-principal{
-    height: 30%;
-    width: 80%;
+    height: 600px;
 }
 
 /*articulo 2*/
@@ -41,12 +40,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10%;
 
     backdrop-filter: blur(10px);
     background-color: rgba(10, 9, 9, 0.301);
     width: 80%;
 
+}
+.gta-sa-h2-title-principal{
+    color: #FFFFFF;
+    font-size: 200%;
 }
 .gta-sa-h2-title-introduccion{
     color: #FFFFFF;
@@ -63,15 +65,19 @@
     white-space: pre-line;
 }
 #gta-sa-p-introduccion{
-    padding: 10%;
+    padding: 0 10% 5% 10%;
 }
 .gta-sa-img-intruduccion{
     height: auto;
     width: 80%;
 }
+.gta-sa-img-historia{
+    height: 400px;
+    width: 70%;
+}
 .gta-sa-carrusel{
     height: 50%;
-    width: 90%;
+    width: 80%;
 
     display: flex;
     flex-direction: row;
@@ -79,7 +85,7 @@
 
     padding: 3% 0;
     border-radius: 20px;
-    background-color: #303238da;
+    background-color: rgba(128, 121, 121, 0.527);
 }
 .gta-sa-button-izquierdo, .gta-sa-button-derecho{
     background-color: transparent;
@@ -89,24 +95,22 @@
     object-fit: scale-down;
 }
 .gta-sa-button-imagen{
-    width: 100%;
+    max-width: 50%;
     height: auto;
-    object-fit: scale-down;
+    transition: transform 0.3s ease;
 }
 
 .gta-sa-button-izquierdo:hover{
-    border-radius: 5px;
-    background-color: rgb(255, 0, 0);
+    transform: scale(1.88);
 }
 .gta-sa-button-derecho:hover{
-    border-radius: 5px;
-    background-color: rgb(255, 0, 0);
+    transform: scale(1.88);
 }
 .gta-sa-cont-img-carrusel{
     display: flex;
     justify-content: space-evenly;
     width: 90%;
-    
+    object-fit: scale-down;
 }
 .gta-sa-img-carrusel{
     width: 32%;
@@ -115,6 +119,28 @@
 }
 
 /*----------------------------------------------*/
+.gta-sa-mods{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 100%;
+    margin: 0;
+}
+.gta-sa-container-mods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1% 10%;
+    padding: 3% 0;
+    width: 80%;
+
+    border-radius: 20px;
+    background-color: rgba(187, 178, 178, 0.315);
+}
 .gta-sa-enlace-mods{
     font-size: 25px;    
     font-weight: bold;
@@ -131,4 +157,19 @@
     padding: 0 10% 5% 10%;
     font-size: 110%;
     white-space: pre-line;
+}
+.gta-sa-carrusel-mod{
+    height: 50%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3% 0;
+    border-radius: 20px;
+    background-color: rgba(128, 121, 121, 0.527);
+}
+#gta-sa-container-mod-ultimo{
+    margin-bottom: 5%;
 }
