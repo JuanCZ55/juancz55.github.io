@@ -1,0 +1,72 @@
+#cuerpoSection {
+    margin: 0% 10%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.11);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articleEnlances {
+    width: 60%;
+}
+
+.columVid {
+    width: 35%;
+    margin-left: 5%;
+
+}
+
+.divEnlances {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #292b37;
+    border-radius: 6px;
+    height: auto;
+
+}
+
+.aEnlance {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.aDivH3 {
+    margin-left: 20px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.imgEnlace {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+#h1TituloTrailers {
+    font-size: 2em;
+}
+.columVid{
+    margin: auto;
+    width: 400px;
+    max-width: 125%;
+}
+.videos {
+    width:110%;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+}
+figcaption{
+    margin-bottom: 25px;
+}
