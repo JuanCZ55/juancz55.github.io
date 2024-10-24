@@ -1,4 +1,3 @@
-
         const imagenes = [];
         for (let i = 1; i <= 4; i++) {
             imagenes.push("../Imagenes/GTASA/Imagen (" + i + ").jpg");

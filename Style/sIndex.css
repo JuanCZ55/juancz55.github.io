@@ -3,20 +3,9 @@
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.11);
     padding: 20px;
-    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.articleEnlances {
-    width: 60%;
-}
-
-.columVid {
-    width: 35%;
-    margin-left: 5%;
-
 }
 
 .divEnlances {
@@ -52,21 +41,99 @@
     max-width: 300px;
     max-height: 200px;
 }
-
-#h1TituloTrailers {
-    font-size: 2em;
+/*--------------------------------------------------------*/
+.articleEnlances {
+    width: 60%;
 }
-.columVid{
-    margin: auto;
-    width: 400px;
-    max-width: 125%;
+.columVid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2% 0;
+    width: 35%;
+    border-radius: 4px;
+    background-color: rgb(27, 27, 27);
+}
+#h1TituloTrailers{
+    margin-top: 0;
+    font-size: 2em;
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+.index-cont-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.index-title-video{
+    width: auto;
+    text-align: start;
 }
 .videos {
-    width:110%;
+    width:90%;
     height: 200px;
     border: none;
     border-radius: 5px;
 }
-figcaption{
-    margin-bottom: 25px;
+/*----------------------------------------------------------*/
+.index-cont-carrusel{
+    width: 100%;
+    background-color: #25272cfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index-title{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+.index-carrusel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3% 0;
+    margin-bottom: 5%;
+    height: 300px;
+    width: 95%;
+    border-radius: 5px;
+    background-color: #353a47da;
+}
+.index-button-izquierdo, .index-button-derecho{
+    background: none;
+    border: none;
+    width: 5%;
+    height: auto;
+    object-fit: scale-down;
+}
+.index-button-imagen{
+    max-width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.index-button-izquierdo:hover{
+    transform: scale(1.88);
+}
+.index-button-derecho:hover{
+    transform: scale(1.88);
+}
+.index-cont-img-carrusel{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    
+}
+.index-img-carrusel{
+    width: 32%;
+    height: auto;
+    object-fit: scale-down;
+
+    
 }

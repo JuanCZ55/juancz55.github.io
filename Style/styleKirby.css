@@ -57,6 +57,7 @@
     margin: 0;
     padding: 0 10% 5% 10%;
     font-size: 110%;
+    text-align: justify;
     white-space: pre-line;
 }
 .kirby-img-intruduccion{

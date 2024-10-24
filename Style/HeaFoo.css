@@ -1,7 +1,10 @@
 * {
-    /* cursor: url(../Cursor/puntero.png) 0 0, auto; */
+    cursor: url(../Cursor/puntero.png) 0 0, auto; 
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
+}
+a {
+    cursor: url(../Cursor/punteroSelc.png), auto;
 }
 
 body {
@@ -26,7 +29,9 @@ body {
     background-size: cover;
     width: 100%;
     padding: 3% 0;
+    
 }
+
 
 /*class Logo*/
 .header-titular {
