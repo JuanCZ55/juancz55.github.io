@@ -1,5 +1,5 @@
 function validarForm() {
-    const tNom = /^[a-zA-ZñÑ.'\s]+$/;
+    const tNom = /^[a-zA-ZñÑ.\s]+$/;
     let tmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const tTel = /^\+?\d{8,13}$/;
     const tMsj = /^[\s\S]{10,400}$/;

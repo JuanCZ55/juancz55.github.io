@@ -1,6 +1,5 @@
-
 /*articulo 1*/
-.gtaV-article-introduccion{
+.gtaV-article-introduccion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,33 +9,35 @@
 
     background-image: url("../Imagenes/GTA5/Fondo-principal.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
 }
 
 
-.gtaV-div-container-introduccion{
+.gtaV-div-container-introduccion {
     width: 80%;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.gtaV-h1-title-principal{
+
+.gtaV-h1-title-principal {
     text-align: center;
     font-size: 300%;
     color: #030202;
     margin: 0;
     padding: 20px 0;
 }
-.gtaV-img-principal{
+
+.gtaV-img-principal {
     height: 30%;
     width: 80%;
 }
 
 /*articulo 2*/
-.gtaV-article-informacion{
+.gtaV-article-informacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,20 +48,23 @@
     width: 80%;
 
 }
-.gtaV-h2-title-introduccion{
+
+.gtaV-h2-title-introduccion {
     color: #FFFFFF;
     font-size: 200%;
 
     margin: 0;
     padding: 5% 10%;
 }
-.gtaV-p-introduccion-principal{
+
+.gtaV-p-introduccion-principal {
     color: #FFFFFF;
     margin: 0;
     padding: 0 10% 5% 10%;
     font-size: 110%;
 }
-.gtaV-p-introduccion{
+
+.gtaV-p-introduccion {
     color: #FFFFFF;
     margin: 0;
     padding: 0 10% 5% 10%;
@@ -68,15 +72,18 @@
     text-align: justify;
     white-space: pre-line;
 }
-.gtaV-img-intruduccion{
+
+.gtaV-img-intruduccion {
     height: auto;
     width: 80%;
 }
-.gtaV-img-presentacion{
+
+.gtaV-img-presentacion {
     height: auto;
     width: 70%;
 }
-.gtaV-carrusel{
+
+.gtaV-carrusel {
     height: 50%;
     width: 90%;
 
@@ -88,41 +95,47 @@
     border-radius: 20px;
     background-color: #303238da;
 }
-.gtaV-button-izquierdo, .gtaV-button-derecho{
+
+.gtaV-button-izquierdo,
+.gtaV-button-derecho {
     background-color: transparent;
     border: none;
     width: 10%;
     height: auto;
     object-fit: scale-down;
 }
-.gtaV-button-imagen{
-    width: 100%;
+
+.gtaV-button-imagen {
+    max-width: 50%;
     height: auto;
-    object-fit: scale-down;
+    transition: transform 0.3s ease;
 }
 
-.gtaV-button-izquierdo:hover{
-    border-radius: 5px;
-    background-color: rgb(255, 0, 0);
+.gtaV-button-izquierdo:hover {
+    transform: scale(1.88);
+
 }
-.gtaV-button-derecho:hover{
-    border-radius: 5px;
-    background-color: rgb(255, 0, 0);
+
+.gtaV-button-derecho:hover {
+    transform: scale(1.88);
+
 }
-.gtaV-cont-img-carrusel{
+
+.gtaV-cont-img-carrusel {
     display: flex;
     justify-content: space-evenly;
     width: 90%;
-    
+
 }
-.gtaV-img-carrusel{
+
+.gtaV-img-carrusel {
     width: 32%;
     height: auto;
     object-fit: scale-down;
 }
 
 /*--------------------------------------------------------*/
-.gtaV-enlaces-extras{
+.gtaV-enlaces-extras {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,7 +146,8 @@
     padding-bottom: 5%;
     width: 100%;
 }
-.gtaV-extra{
+
+.gtaV-extra {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -146,10 +160,12 @@
     width: 85%;
     margin: 1%;
 }
-.gtaV-conteiner-extra{
+
+.gtaV-conteiner-extra {
     width: 70%;
 }
-.gtaV-h3-extra{
+
+.gtaV-h3-extra {
     height: auto;
     width: 80%;
     font-size: 20px;
@@ -157,7 +173,8 @@
     padding: 5%;
     margin: 0;
 }
-.gtaV-parrafo-extra{
+
+.gtaV-parrafo-extra {
     font-size: 100%;
     text-align: center;
 
@@ -171,7 +188,8 @@
     width: 8%;
     margin-left: 75%;
 }
-.gtaV-img-extra{
+
+.gtaV-img-extra {
     height: auto;
     width: 30%;
     border-top-right-radius: 20px;

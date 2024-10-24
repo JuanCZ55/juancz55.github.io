@@ -5,7 +5,7 @@ body {
 #sectionformulario {
     margin: 0% 20%;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: rgba(10, 9, 9, 0.301);
     padding: 20px;
     border-radius: 10px;
     width: 40%;
@@ -29,6 +29,7 @@ body {
     border: none;
     border-bottom: 2px solid;
     transform: color 29s ease;
+    font-size: 20px;
 }
 
 .inputForm:focus {
@@ -80,4 +81,8 @@ body {
     text-align: left;
     margin: auto;
     width: 35%;
+}
+.erroresP{
+    color: red;
+    font-size: 0.8em;
 }

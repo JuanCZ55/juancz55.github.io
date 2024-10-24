@@ -118,12 +118,12 @@ nav {
     color: #1abc9c;
 }
 
-#header-nav-menu-truco {
+.header-nav-menu-truco {
     display: flex;
     justify-content: center;
 }
 
-#header-nav-pag-truco {
+.header-nav-pag-truco {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 230%;
@@ -131,7 +131,8 @@ nav {
     border-radius: 5px;
 }
 
-#header-nav-pag-truco:hover {
+
+.header-nav-pag-truco:hover {
     color: #1abc9c;
     background-color: rgb(46, 44, 44);
 }

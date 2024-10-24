@@ -125,8 +125,8 @@ for (let num = 1; num <= 6; num++) {
 const imgA = document.getElementById("gta-sa-imagen-mod2-1");
 const imgB = document.getElementById("gta-sa-imagen-mod2-2");
 const imgC = document.getElementById("gta-sa-imagen-mod2-3");
-const btnRight = document.getElementById("gta-sa-button-derecho-mod2");
-const btnLeft = document.getElementById("gta-sa-button-izquierdo-mod2");
+const btnRight = document.getElementById("gta-sa-button-izquierdo-mod2");
+const btnLeft = document.getElementById("gta-sa-button-derecho-mod2");
 
 let idx1 = 0;
 let idx2 = 1;
@@ -185,8 +185,8 @@ for (let j = 1; j <= 6; j++) {
 const imgUno = document.getElementById("gta-sa-imagen-mod1-1");
 const imgDos = document.getElementById("gta-sa-imagen-mod1-2");
 const imgTres = document.getElementById("gta-sa-imagen-mod1-3");
-const nextButton = document.getElementById("gta-sa-button-derecho-mod1");
-const prevButton = document.getElementById("gta-sa-button-izquierdo-mod1");
+const nextButton = document.getElementById("gta-sa-button-izquierdo-mod1");
+const prevButton = document.getElementById("gta-sa-button-derecho-mod1");
 
 let pos1 = 0;
 let pos2 = 1;

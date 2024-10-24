@@ -16,6 +16,8 @@
 }
 
 #imagen-inicioX {
+    width: 80%;
+
     max-width: 80%;
     height:auto;
     margin: auto;
@@ -78,10 +80,10 @@
 
 #carruselx,
 #carrusels {
-
-    max-width: 90%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 90%;
     padding: 3% 0;
     border-radius: 20px;
     background-color: #303238da;
@@ -146,5 +148,5 @@
 
 }
 .botonesC img:hover {
-    transform: scale(1.09);
+    transform: scale(1.88);
 }

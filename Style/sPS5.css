@@ -21,7 +21,7 @@
 #cuerpops {
     margin: 0% 10%;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: rgba(10, 9, 9, 0.301);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ dl {
 
 }
 .botonesC img:hover {
-    transform: scale(1.09);
+    transform: scale(1.88);
 }
 .footer_title{
     padding: 0;
