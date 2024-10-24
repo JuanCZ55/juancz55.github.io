@@ -81,6 +81,8 @@ body {
     text-align: left;
     margin: auto;
     width: 35%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 .erroresP{
     color: red;
